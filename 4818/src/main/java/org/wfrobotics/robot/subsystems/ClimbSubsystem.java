@@ -1,7 +1,5 @@
 package org.wfrobotics.robot.subsystems;
 
-import org.wfrobotics.reuse.hardware.TalonChecker;
-import org.wfrobotics.reuse.hardware.TalonFactory;
 import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 import org.wfrobotics.robot.commands.climb.ClimbNone;
 import org.wfrobotics.robot.config.RobotConfig;

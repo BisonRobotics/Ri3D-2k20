@@ -2,7 +2,6 @@ package org.wfrobotics.robot.subsystems;
 
 import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 import org.wfrobotics.robot.commands.Shooter.ShootNone;
-import org.wfrobotics.robot.commands.climb.ClimbNone;
 import org.wfrobotics.robot.config.RobotConfig;
 
 public final class ShooterSubsystem extends EnhancedSubsystem
@@ -33,7 +32,7 @@ public final class ShooterSubsystem extends EnhancedSubsystem
 
     public void reportState()
     {
-        
+
     }
 
     public TestReport runFunctionalTest()
