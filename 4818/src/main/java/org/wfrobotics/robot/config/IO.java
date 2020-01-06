@@ -41,8 +41,6 @@ public final class IO implements EnhancedIO
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new SetPrecentIntake(0.8));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new PrecentSpinner(1.0));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new DeployPercent(0.5));
-
-
     }
 
 

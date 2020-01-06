@@ -25,6 +25,7 @@ public final class ClimbSubsystem extends EnhancedSubsystem
     {
         final RobotConfig config = RobotConfig.getInstance();
         deploy = TalonFactory.makeTalon(config.climbConfig.upCdayzi);
+        
     }
     public void setPrecentSpeedUp(double speed)
     {
