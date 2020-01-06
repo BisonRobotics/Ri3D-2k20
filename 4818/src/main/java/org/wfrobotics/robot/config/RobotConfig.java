@@ -1,5 +1,6 @@
 package org.wfrobotics.robot.config;
 
+import org.wfrobotics.reuse.commands.drive.DriveCheesy;
 import org.wfrobotics.reuse.config.EnhancedRobotConfig;
 import java.util.Optional;
 
@@ -8,7 +9,6 @@ import org.wfrobotics.reuse.config.TalonConfig.FollowerConfig;
 import org.wfrobotics.reuse.config.TalonConfig.Gains;
 import org.wfrobotics.reuse.config.TalonConfig.MasterConfig;
 import org.wfrobotics.reuse.config.TankConfig;
-import org.wfrobotics.robot.commands.drive.DriveToTarget;
 
 import edu.wpi.first.wpilibj.command.Command;
 
@@ -19,7 +19,7 @@ public class RobotConfig extends EnhancedRobotConfig
     // _________________________________________________________________________________
     public TankConfig getTankConfig() 
     {
-        final TankConfig config = new DeepSpaceTankConfig();
+        final TankConfig config = new GreenHorn2k20();
 
         config.CLOSED_LOOP_ENABLED = false;  // TODO remove after making closed loop an Optional
 
@@ -57,14 +57,15 @@ public class RobotConfig extends EnhancedRobotConfig
         return config;
     }
 
-    public class DeepSpaceTankConfig extends TankConfig 
+    public class GreenHorn2k20 extends TankConfig 
     {
         @Override
         public Command getTeleopCommand()
         {
-            return new DriveToTarget();
+            return new DriveCheesy();
         }
     }
+
     
     public final double kLinkOnTargetDegrees = 3.0;
 

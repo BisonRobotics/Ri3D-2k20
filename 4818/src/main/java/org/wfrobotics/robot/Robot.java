@@ -3,12 +3,11 @@ package org.wfrobotics.robot;
 import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.robot.config.IO;
 import org.wfrobotics.robot.config.RobotConfig;
-import org.wfrobotics.robot.subsystems.SuperStructure;
-import org.wfrobotics.robot.subsystems.Vision;
-import org.wfrobotics.robot.subsystems.Climb;
-import org.wfrobotics.robot.subsystems.Elevator;
-import org.wfrobotics.robot.subsystems.Intake;
-import org.wfrobotics.robot.subsystems.Link;
+import org.wfrobotics.robot.subsystems.ClimbSubsystem;
+import org.wfrobotics.robot.subsystems.IntakeSubsystem;
+import org.wfrobotics.robot.subsystems.ShooterSubsystem;
+import org.wfrobotics.robot.subsystems.WofFSubsystem;
+
 
 /**
  * Robot: <TBD Robot Name> - 2019
@@ -23,18 +22,16 @@ public final class Robot extends EnhancedRobot
 
     protected void registerRobotSpecific()
     {
-        EnhancedRobot.leds = SuperStructure.getInstance().getJeff();
-       subsystems.register(Climb.getInstance());
-        subsystems.register(Elevator.getInstance());
-        subsystems.register(Link.getInstance());
-        subsystems.register(Intake.getInstance());
-        subsystems.register(SuperStructure.getInstance());  
-        subsystems.register(Vision.getInstance());
+        subsystems.register(ClimbSubsystem.getInstance());
+        subsystems.register(IntakeSubsystem.getInstance());
+        subsystems.register(ShooterSubsystem.getInstance());
+        subsystems.register(WofFSubsystem.getInstance());
+
     }
 
     @Override
     public void autonomousInit()
     {
-        Intake.getInstance().resetAutoModeHatch();
+        
     }
 }

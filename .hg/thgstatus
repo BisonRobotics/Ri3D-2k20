@@ -5,6 +5,16 @@ r4360/src/main/java/org/wfrobotics/robot
 r4360/src/main/java/org/wfrobotics/robot/auto
 r4360/src/main/java/org/wfrobotics/robot/config
 r4360/src/main/java/org/wfrobotics/robot/subsystems
+m4818/src/main/java/org/wfrobotics/robot
+r4818/src/main/java/org/wfrobotics/robot/commands
+r4818/src/main/java/org/wfrobotics/robot/commands/climb
+r4818/src/main/java/org/wfrobotics/robot/commands/elevator
+r4818/src/main/java/org/wfrobotics/robot/commands/experimental
+r4818/src/main/java/org/wfrobotics/robot/commands/intake
+r4818/src/main/java/org/wfrobotics/robot/commands/link
+r4818/src/main/java/org/wfrobotics/robot/commands/system
+r4818/src/main/java/org/wfrobotics/robot/config
+r4818/src/main/java/org/wfrobotics/robot/subsystems
 r7048
 r7048/.vscode
 r7048/src/main/java/org/wfrobotics/robot
@@ -16,3 +26,9 @@ r7048/src/main/java/org/wfrobotics/robot/commands/wrist
 r7048/src/main/java/org/wfrobotics/robot/config
 r7048/src/main/java/org/wfrobotics/robot/subsystems
 r7048/vision
+rprototype
+rprototype/.vscode
+rprototype/src/main/java/org/wfrobotics/robot
+rprototype/src/main/java/org/wfrobotics/robot/commands
+rprototype/src/main/java/org/wfrobotics/robot/config
+rprototype/src/main/java/org/wfrobotics/robot/subsystems
