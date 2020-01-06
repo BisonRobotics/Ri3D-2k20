@@ -20,7 +20,12 @@ public class RobotConfig
         public int rightMaster =  0;
         public int rightSlave = 1;
         public int leftMaster = 2;
-        public int leftSlace = 3;
+        public int leftSlave = 3;
+        public double maxSpeed = 1.0; //exactly what it sounds like
+        // Set this to true if bot only spins when you try to go forward or back
+        public boolean rightSideInverted = false;
+        // You'll need to increase this if the drive is twitchy at idle, but .06 should be fine
+        public double deadband = 0.06;
     }
     public class ShooterConfig
     {

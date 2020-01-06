@@ -1,6 +1,5 @@
 package org.wfrobotics.robot.config;
 
-import org.wfrobotics.reuse.config.AutoFactory;
 import org.wfrobotics.reuse.config.ButtonFactory;
 import org.wfrobotics.reuse.config.ButtonFactory.TRIGGER;
 import org.wfrobotics.robot.commands.Shooter.BeltSpeed;
@@ -41,8 +40,6 @@ public final class IO implements EnhancedIO
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new SetPrecentIntake(0.8));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new PrecentSpinner(1.0));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new DeployPercent(0.5));
-
-
     }
 
 
