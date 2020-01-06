@@ -1,5 +1,9 @@
 package org.wfrobotics.robot.subsystems;
 
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.TalonSRX;
+
+import org.wfrobotics.reuse.hardware.TalonFactory;
 import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 import org.wfrobotics.robot.commands.climb.ClimbNone;
 import org.wfrobotics.robot.config.RobotConfig;
@@ -15,10 +19,16 @@ public final class ClimbSubsystem extends EnhancedSubsystem
         return SingletonHolder.instance;
     }
 
+    TalonSRX deploy;
 
     public ClimbSubsystem()
     {
         final RobotConfig config = RobotConfig.getInstance();
+        deploy = TalonFactory.makeTalon(config.climbConfig.upCdayzi);
+    }
+    public void setPrecentSpeedUp(double speed)
+    {
+        deploy.set(ControlMode.PercentOutput, speed);
     }
 
     protected void initDefaultCommand()

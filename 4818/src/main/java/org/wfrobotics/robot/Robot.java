@@ -2,7 +2,6 @@ package org.wfrobotics.robot;
 
 import org.wfrobotics.reuse.EnhancedRobot;
 import org.wfrobotics.robot.config.IO;
-import org.wfrobotics.robot.config.RobotConfig;
 import org.wfrobotics.robot.subsystems.ClimbSubsystem;
 import org.wfrobotics.robot.subsystems.IntakeSubsystem;
 import org.wfrobotics.robot.subsystems.ShooterSubsystem;
