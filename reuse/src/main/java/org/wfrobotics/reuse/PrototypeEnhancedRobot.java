@@ -41,6 +41,12 @@ public abstract class PrototypeEnhancedRobot extends TimedRobot
         state = state_;
         buttons = buttons_;
     }
+    protected PrototypeEnhancedRobot(RobotStateBase state_, EnhancedIO buttons_)
+    {
+        super();
+        state = state_;
+        buttons = buttons_;
+    }
 
     public static RobotStateBase getState() { return state; }
     public static EnhancedRobotConfig getConfig() { return config; }
@@ -59,10 +65,6 @@ public abstract class PrototypeEnhancedRobot extends TimedRobot
 
         buttons.assignButtons();                // Initialize Buttons after subsystems
         AutoFactory.getInstance().onSelectionChanged();  // Set default auto mode
-        if (getConfig().cameraStream.orElse(false))
-        {
-            DashboardView.startPerformanceCamera();
-        }
     }
 
     @Override

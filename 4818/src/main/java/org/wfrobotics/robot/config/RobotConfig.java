@@ -30,25 +30,25 @@ public class RobotConfig
     public class ShooterConfig
     {
         public int belt = 4;
-        public int flywheel = 7;
+        public int flywheel = 5;
 
     }
     public class ClimbConfig
     {
-        public int climbMaster = 5;
+        public int climbMaster = 6;
         public int climbSlave = 7;
 
-        public int upCdayzi = 9;
+        public int upCdayzi = 8;
 
     }
     public class WofFConfig
     {
-        public int spinner = 5;
+        public int spinner = 9;
     }
     public class IntakeConfig
     {
-        public int intake = 6;
-        public int loader = 9;
+        public int intake = 10;
+        public int loader = 11;
     }
 
     private static RobotConfig instance = null;

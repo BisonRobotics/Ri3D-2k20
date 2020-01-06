@@ -5,6 +5,7 @@ import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
 import org.wfrobotics.reuse.hardware.TalonFactory;
 import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
+import org.wfrobotics.robot.commands.WofF.WofFNone;
 import org.wfrobotics.robot.commands.climb.ClimbNone;
 import org.wfrobotics.robot.config.RobotConfig;
 
@@ -33,7 +34,7 @@ public final class WofFSubsystem extends EnhancedSubsystem
 
     protected void initDefaultCommand()
     {
-        setDefaultCommand(new ClimbNone());
+        setDefaultCommand(new WofFNone());
     }
 
     public void cacheSensors(boolean isDisabled)

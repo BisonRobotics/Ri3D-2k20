@@ -1,17 +1,17 @@
 package org.wfrobotics.robot.subsystems;
 
-import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
+import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 import org.wfrobotics.robot.commands.drive.*;
 import org.wfrobotics.robot.config.RobotConfig;
 
 import org.wfrobotics.robot.config.IO;
 
-public class DrivetrainSubsystem extends Subsystem {
+public class DrivetrainSubsystem extends EnhancedSubsystem {
 
   static class SingletonHolder {
     static DrivetrainSubsystem instance = new DrivetrainSubsystem();
@@ -68,5 +68,20 @@ public class DrivetrainSubsystem extends Subsystem {
   // Main robot driving control
   public void driveeeee() {
     robotDrive.arcadeDrive(OIConfig.getThrottle(), OIConfig.getTurn(), true); // true for squared inputs
+  }
+  
+  public void cacheSensors(boolean isDisabled) {
+
+  }
+
+  public void reportState() {
+  }
+
+  public TestReport runFunctionalTest() {
+      TestReport report = new TestReport();
+
+      report.add(getDefaultCommand().doesRequire(this));
+
+      return report;
   }
 }

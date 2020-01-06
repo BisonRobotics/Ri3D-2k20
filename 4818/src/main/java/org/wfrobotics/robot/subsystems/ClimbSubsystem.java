@@ -1,7 +1,7 @@
 package org.wfrobotics.robot.subsystems;
 
-import com.revrobotics.CANSparkMax;
-import com.revrobotics.CANSparkMaxLowLevel.MotorType;
+// import com.revrobotics.CANSparkMax;
+// import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
 import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 import org.wfrobotics.robot.commands.climb.ClimbNone;
@@ -16,26 +16,26 @@ public final class ClimbSubsystem extends EnhancedSubsystem {
         return SingletonHolder.instance;
     }
 
-    private CANSparkMax motor1;
-    private CANSparkMax motor2;
+    // private CANSparkMax motor1;
+    // private CANSparkMax motor2;
 
     public ClimbSubsystem() {
         final RobotConfig config = RobotConfig.getInstance();
         // Set up the SPARKS
-        motor1 = new CANSparkMax(config.climbConfig.climbMaster, MotorType.kBrushless);
-        motor2 = new CANSparkMax(config.climbConfig.climbSlave, MotorType.kBrushless);
+        // motor1 = new CANSparkMax(config.climbConfig.climbMaster, MotorType.kBrushless);
+        // motor2 = new CANSparkMax(config.climbConfig.climbSlave, MotorType.kBrushless);
 
         // Clear any residual bad values
-        motor1.restoreFactoryDefaults();
-        motor2.restoreFactoryDefaults();
+        // motor1.restoreFactoryDefaults();
+        // motor2.restoreFactoryDefaults();
 
         // Slave motor2 to motor1
-        motor2.follow(motor1);
+        // motor2.follow(motor1);
     }
 
     public void setPrecentSpeedUp(double speed) {
         // Set output speed
-        motor1.set(speed);
+        // motor1.set(speed);
     }
 
     protected void initDefaultCommand() {
