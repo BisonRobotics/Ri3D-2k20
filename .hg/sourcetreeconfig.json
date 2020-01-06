@@ -1,0 +1,33 @@
+{
+  "$id": "1",
+  "AutoRefresh": true,
+  "AutoRefreshRemotes": true,
+  "CommitTextLinks": null,
+  "DraftCommitMsg": "",
+  "IncomingSavedCount": 0,
+  "LastCheckedRemotes": "2020-01-04T09:06:19.6616636-06:00",
+  "LastUsedView": 1,
+  "LogBranchFilterIndex": 1,
+  "OutgoingSavedCount": 0,
+  "SidebarExpandedItems": [
+    "File Status",
+    "Branches"
+  ],
+  "SidebarWidth": 210.0,
+  "SubtreeLinks": [],
+  "RemoteProjectLinks": [
+    {
+      "$id": "2",
+      "BaseUrl": "https://bitbucket.org",
+      "Identifier": "westfargorobotics/robot",
+      "RemoteName": "origin",
+      "Type": 1,
+      "Username": "wfrobotics",
+      "CloneUrl": null,
+      "ProjectUrl": null,
+      "AccountId": "",
+      "AvatarUrl": null,
+      "DisplayName": "origin: https://bitbucket.org"
+    }
+  ]
+}
