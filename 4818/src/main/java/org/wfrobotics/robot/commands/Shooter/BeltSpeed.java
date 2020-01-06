@@ -1,26 +1,32 @@
 package org.wfrobotics.robot.commands.Shooter;
 
+import org.wfrobotics.robot.subsystems.IntakeSubsystem;
 import org.wfrobotics.robot.subsystems.ShooterSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 
-public class ShootNone extends Command
+public class BeltSpeed extends Command
 {
     private final ShooterSubsystem shooter = ShooterSubsystem.getInstance();
-
-    public ShootNone()
+    double speed;
+    public BeltSpeed(double precentSpeed)
     {
         requires(shooter);
+        this.speed = precentSpeed;
+    }
+    protected void init()
+    {
+        shooter.setBeltSpeed(speed);
     }
 
     protected void execute()
     {
-        shooter.setBeltSpeed(0);
-        shooter.setFlyWheelSpeed(0);
+
     }
 
     protected boolean isFinished()
     {
+        shooter.setBeltSpeed(0);
         return false;
     }
 
