@@ -1,6 +1,0 @@
-plugins {
-    id "java"
-    id "edu.wpi.first.GradleRIO"
-}
-
-apply from: rootProject.file('teams.gradle')

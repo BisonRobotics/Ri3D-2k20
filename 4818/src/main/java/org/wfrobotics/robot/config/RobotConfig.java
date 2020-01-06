@@ -3,20 +3,17 @@ package org.wfrobotics.robot.config;
 import org.wfrobotics.reuse.config.EnhancedRobotConfig;
 import java.util.Optional;
 
-import org.wfrobotics.reuse.config.RobotConfigPicker;
 import org.wfrobotics.reuse.config.TalonConfig.ClosedLoopConfig;
 import org.wfrobotics.reuse.config.TalonConfig.FollowerConfig;
 import org.wfrobotics.reuse.config.TalonConfig.Gains;
 import org.wfrobotics.reuse.config.TalonConfig.MasterConfig;
 import org.wfrobotics.reuse.config.TankConfig;
-import org.wfrobotics.reuse.subsystems.PositionBasedSubsystem.PositionConfig;
 import org.wfrobotics.robot.commands.drive.DriveToTarget;
 
 import edu.wpi.first.wpilibj.command.Command;
 
 public class RobotConfig extends EnhancedRobotConfig
 {
-    private static RobotConfig instance = null;
 
      // Tank
     // _________________________________________________________________________________
@@ -68,125 +65,6 @@ public class RobotConfig extends EnhancedRobotConfig
             return new DriveToTarget();
         }
     }
-    // Climb
-    // _________________________________________________________________________________
-    public int CLIMBER_ARMS_MASTER = 6;
-    public int CLIMBER_ARMS_SLAVE = 7;
-
-    public PositionConfig getClimbConfig()
-    {
-        int kTicksToTop = 143000;  
-        double kVelocityMax = 8500.0;  
-        int kCruise = (int) (kVelocityMax * 0.975);
-        int kAcceleration = (int) (kCruise * 3.50);
-
-        final PositionConfig c = new PositionConfig();
-
-        c.kClosedLoop = new ClosedLoopConfig("Climb",
-            new MasterConfig[] { 
-                new MasterConfig(9, true, false)
-            },
-            new Gains[] {
-                new Gains("Motion Magic", 0, 0.25, 0.0001, 1.0, 1023.0 / kVelocityMax, 40,
-                                         kCruise, kAcceleration),
-            }
-        );
-        c.kTicksToTop = kTicksToTop;
-        // c.kFullRangeInchesOrDegrees = 56.0;  
-        // c.kSoftwareLimitT = Optional.of(kTicksToTop);
-        c.kSoftwareLimitB = Optional.of(-100);
-        c.kFeedForward = Optional.of(0.11);
-        // c.kTuning = Optional.of(true);   
-
-        return c;
-    }
-    public PnuaticConfig getPnumaticConfig()
-    {
-        final PnuaticConfig config = new PnuaticConfig();
-                 
-        // Hardware
-        config.kAddressPCMShifter =0;
-        config.kAddressPCMPoppers = 0;
-        // intake
-        config.kAddressSolenoidPoppersF =7;
-        config.kAddressSolenoidPoppersB=6;
-        //elevator -> Shift
-        config.kAddressSolenoidShifterF=4;
-        config.kAddressSolenoidShifterB=5;
-
-        return config;
-    }
-
-    // Elevator
-    // _________________________________________________________________________________
-
-    // Hardware
-    public PositionConfig getElevatorConfig()
-    {
-        int kTicksToTop = 156624;
-        double kVelocityMax = 12750.0;
-        int kCruise = (int) (kVelocityMax * 0.975);
-        int kAcceleration = (int) (kCruise * 3.50);
-
-        final PositionConfig c = new PositionConfig();
-
-        c.kClosedLoop = new ClosedLoopConfig("Lift",
-            new MasterConfig[] {
-                new MasterConfig(17, false, true, new FollowerConfig(16, true, false))
-            },
-            new Gains[] {
-                new Gains("Motion Magic", 0, 0.55, 0.0001, 0.7, 1023.0 / kVelocityMax, 20,
-                                 kCruise, kAcceleration),
-            }
-        );
-        c.kTicksToTop = kTicksToTop;
-        c.kFullRangeInchesOrDegrees = 56.0;  // Good as of March 21st;
-        c.kSoftwareLimitT = Optional.of(kTicksToTop);
-        c.kSoftwareLimitB = Optional.of(-100);
-        c.kFeedForward = Optional.of(0.11);
-        // c.kTuning = Optional.of(false);
-
-        return c;
-    }
-    
-    public final double kElevatorOnTargetDegrees = 2.0;
-
-    // Intake
-    // _________________________________________________________________________________
-
-    // Hardware
-    public final double kIntakeDistanceTimeout = 0.025; // time in secounds 
-    public final int kAddressTalonCargo = 8;
-    public final boolean kInvertTalonCargo = true;
-
-    // Link
-    // _________________________________________________________________________________
-    public PositionConfig getLinkConfig() 
-    {
-        final PositionConfig c = new PositionConfig();
-
-        int kTicksToTop = 6500;
-        int kVelocityMax = 2100;
-        int kVelocityCruise = (int) (kVelocityMax * 0.95);
-        int kAcceleration = (int) (kVelocityCruise * 4.0);
-
-        c.kClosedLoop = new ClosedLoopConfig("Link",
-            new MasterConfig[] { 
-                new MasterConfig(9, true, false)
-            },
-            new Gains[] {
-                new Gains("Motion Magic", 0, 0.25, 0.0001, 1.0, 1023.0 / kVelocityMax, 40,
-                                        kVelocityCruise, kAcceleration),
-            }
-        );
-        c.kTicksToTop = kTicksToTop;
-        c.kFullRangeInchesOrDegrees = 100.0;
-        // c.kSoftwareLimitT = Optional.of(kTicksToTop);  // TODO don't hit the ground, just pick something a little too big?
-        // c.kFeedForward = Optional.of(0.0);  // TODO - add a small one
-        c.kTuning = Optional.of(true);
-
-        return c;
-    }
     
     public final double kLinkOnTargetDegrees = 3.0;
 
@@ -211,14 +89,12 @@ public class RobotConfig extends EnhancedRobotConfig
     //  Helper Methods
     // _________________________________________________________________________________
 
+    private static RobotConfig instance = null;
     public static RobotConfig getInstance()
     {
         if (instance == null)
         {
-            instance = (RobotConfig) RobotConfigPicker.get(new EnhancedRobotConfig[] {
-                // new RobotConfig(),     // Competition robot
-                new PracticeConfig(),  // Practice robot difference
-            });
+                instance = new RobotConfig();
         }
         return instance;
     }
