@@ -31,6 +31,6 @@ public class FlywheelPrecent extends Command
 
     protected void end()
     {
-        
+        shooter.setFlyWheelSpeed(0);
     }
 }

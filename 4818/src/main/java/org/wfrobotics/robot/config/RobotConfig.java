@@ -49,6 +49,7 @@ public class RobotConfig
     {
         public int intake = 8;
         public int loader = 24;
+        public int deploy = 69;
     }
 
     private static RobotConfig instance = null;

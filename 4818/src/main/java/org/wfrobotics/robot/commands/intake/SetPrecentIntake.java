@@ -25,11 +25,13 @@ public class SetPrecentIntake extends Command
 
     protected boolean isFinished()
     {
+        intake.setIntakeSpeed(0);
         return false;
     }
 
     protected void end()
     {
+        intake.setIntakeSpeed(0);
 
     }
 }

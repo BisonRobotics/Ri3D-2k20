@@ -31,6 +31,7 @@ public class DeployPercent extends Command
 
     protected void end()
     {
-        
+        climb.setPrecentSpeedUp(0);
+
     }
 }

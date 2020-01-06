@@ -25,11 +25,12 @@ public class SetPrecentLoader extends Command
 
     protected boolean isFinished()
     {
+        intake.setloaderSpeed(0);
         return false;
     }
 
     protected void end()
     {
-
+        intake.setloaderSpeed(0);
     }
 }

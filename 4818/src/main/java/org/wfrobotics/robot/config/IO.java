@@ -28,12 +28,12 @@ public final class IO implements EnhancedIO
     /** Configure each Button to run a Command */
     public void assignButtons()
     {
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new BeltSpeed(0.5));
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new FlywheelPrecent(1.0));
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new SetPrecentLoader(0.5));
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new SetPrecentIntake(0.8));
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new PrecentSpinner(1.0));
-        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new DeployPercent(0.5));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.LB, TRIGGER.WHILE_HELD, new BeltSpeed(0.10));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.RB, TRIGGER.WHILE_HELD, new FlywheelPrecent(0.1));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.Y, TRIGGER.WHILE_HELD, new SetPrecentLoader(0.1));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.B, TRIGGER.WHILE_HELD, new SetPrecentIntake(0.1));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.A, TRIGGER.WHILE_HELD, new PrecentSpinner(0.1));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.X, TRIGGER.WHILE_HELD, new DeployPercent(0.1));
     }
 
     public double getTurn()

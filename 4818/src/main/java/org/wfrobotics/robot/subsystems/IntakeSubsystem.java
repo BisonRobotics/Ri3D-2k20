@@ -22,12 +22,18 @@ public final class IntakeSubsystem extends EnhancedSubsystem
 
     TalonSRX intake;
     TalonSRX loader;
+    TalonSRX deploy;
 
     public IntakeSubsystem()
     {
         final RobotConfig config = RobotConfig.getInstance();
         intake = TalonFactory.makeTalon(config.intakeConfig.intake);
         loader = TalonFactory.makeTalon(config.intakeConfig.loader);
+        deploy = TalonFactory.makeTalon(config.intakeConfig.deploy);
+    }
+    public void setPercentDeploy(double percentSpeed)
+    {
+        intake.set(ControlMode.PercentOutput, percentSpeed);
     }
     public void setIntakeSpeed(double precentSpeed)
     {

@@ -25,11 +25,14 @@ public class PrecentSpinner extends Command
 
     protected boolean isFinished()
     {
+        WofF.setSpinner(0);
+
         return false;
     }
 
     protected void end()
     {
-        
+        WofF.setSpinner(0);
+
     }
 }

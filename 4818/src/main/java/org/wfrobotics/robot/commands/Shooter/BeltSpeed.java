@@ -32,6 +32,7 @@ public class BeltSpeed extends Command
 
     protected void end()
     {
-        
+        shooter.setBeltSpeed(0);
+
     }
 }
