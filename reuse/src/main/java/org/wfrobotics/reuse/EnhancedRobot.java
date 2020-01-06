@@ -42,7 +42,13 @@ public abstract class EnhancedRobot extends TimedRobot
         state = state_;
         buttons = buttons_;
     }
-
+    protected EnhancedRobot(RobotStateBase state_, EnhancedIO buttons_)
+    {
+        super();
+        state = state_;
+        buttons = buttons_;
+    }
+    
     public static RobotStateBase getState() { return state; }
     public static EnhancedRobotConfig getConfig() { return config; }
     public static EnhancedIO getIO() { return buttons; }

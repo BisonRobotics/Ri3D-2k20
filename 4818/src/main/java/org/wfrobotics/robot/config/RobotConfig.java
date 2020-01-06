@@ -1,8 +1,5 @@
 package org.wfrobotics.robot.config;
-
-import org.wfrobotics.reuse.config.EnhancedRobotConfig;
-
-public class RobotConfig extends EnhancedRobotConfig
+public class RobotConfig
 {
     public DriveConfig driveConfig;
     public ShooterConfig shooterConfig;

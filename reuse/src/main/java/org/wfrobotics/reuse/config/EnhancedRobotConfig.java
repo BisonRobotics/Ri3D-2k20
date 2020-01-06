@@ -2,7 +2,9 @@ package org.wfrobotics.reuse.config;
 
 import java.util.Optional;
 
-public abstract class EnhancedRobotConfig 
+import org.wfrobotics.reuse.config.TankConfig.TankConfigSupplier;
+
+public abstract class EnhancedRobotConfig implements TankConfigSupplier
 {
     /** Stream frames to SmartDashboard for heads up view of robot's perspective */
     public Optional<Boolean> cameraStream = Optional.of(true);
