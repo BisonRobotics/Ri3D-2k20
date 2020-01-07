@@ -1,10 +1,8 @@
 package org.usfirst.frc1337.Ri3D2019;
 
 import org.usfirst.frc1337.Ri3D2019.commands.*;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.*;
-import org.usfirst.frc1337.Ri3D2019.subsystems.*;
 
 
 /**
@@ -57,22 +55,22 @@ public class OI {
         driver = new Joystick(0);
         
 
-        // outakeBallBtn = new JoystickButton(driver, 6);
-        // outakeBallBtn.whileHeld(new IntakeMeh(0,1));
+        outakeBallBtn = new JoystickButton(driver, 6);
+        outakeBallBtn.whileHeld(new BeltSpeed(0.1));
         elevatorBtn3 = new JoystickButton(driver, 4);
         elevatorBtn3.whileHeld(new Spinnyboi("raise"));
         elevatorBtn2 = new JoystickButton(driver, 1);
         elevatorBtn2.whileHeld(new Spinnyboi("lower"));
-        // intakeBallBtn = new JoystickButton(driver, 5);
-        // intakeBallBtn.whileHeld(new IntakeMeh(0,0));
-        //elevatorBtn1 = new JoystickButton(driver, 1);
-        //elevatorBtn1.whileHeld(new ElevateMeh());
-        // frontClimbBtn = new JoystickButton(driver, 3);
-        // frontClimbBtn.whileHeld(new climb(0, 1));
-        // frontDeClimbBtn = new JoystickButton(driver, 9);
-        // frontDeClimbBtn.whileHeld(new climb(0, -1));
-        // rearClimbBtn = new JoystickButton(driver, 2);
-        // rearClimbBtn.whileHeld(new climb(1, 1));
+        intakeBallBtn = new JoystickButton(driver, 5);
+        intakeBallBtn.whileHeld(new FlywheelPrecent(0.6));
+        elevatorBtn1 = new JoystickButton(driver, 1);
+        elevatorBtn1.whileHeld(new SetPercentDeploy(0.1));
+        frontClimbBtn = new JoystickButton(driver, 3);
+        frontClimbBtn.whileHeld(new SetPrecentIntake(0.1));
+        frontDeClimbBtn = new JoystickButton(driver, 9);
+        frontDeClimbBtn.whileHeld(new ClimbDeploy(0.2));
+        rearClimbBtn = new JoystickButton(driver, 2);
+        rearClimbBtn.whileHeld(new Retract(0.2));
         // rearDeClimbBtn = new JoystickButton(driver, 10);
         // rearDeClimbBtn.whileHeld(new climb(1, -1));
         // hatchIntakeBtn = new JoystickButton(driver, 7);

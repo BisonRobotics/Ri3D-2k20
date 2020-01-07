@@ -1,13 +1,8 @@
 package org.usfirst.frc1337.Ri3D2019.subsystems;
 
-import org.usfirst.frc1337.Ri3D2019.commands.*;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.PIDOutput;
-import edu.wpi.first.wpilibj.PIDSource;
-import edu.wpi.first.wpilibj.Spark;
-import edu.wpi.first.wpilibj.SpeedController;
+
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class WoF extends Subsystem {

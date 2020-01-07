@@ -1,9 +1,9 @@
 [
   {
-    "artifact": "frcJava (in project Ri3D-2K19-Imported)",
+    "artifact": "frcJava (in project GreenHorn)",
     "target": "roborio",
     "debugfile": "frcJava_roborio.debugconfig",
-    "project": "Ri3D-2K19-Imported",
+    "project": "GreenHorn",
     "language": "java"
   }
 ]

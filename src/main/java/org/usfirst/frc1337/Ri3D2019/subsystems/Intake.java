@@ -1,29 +1,20 @@
 package org.usfirst.frc1337.Ri3D2019.subsystems;
 
-import org.usfirst.frc1337.Ri3D2019.commands.*;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
+import org.usfirst.frc1337.Ri3D2019.RobotConfig;
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj.PIDOutput;
-import edu.wpi.first.wpilibj.PIDSource;
-import edu.wpi.first.wpilibj.Spark;
-import edu.wpi.first.wpilibj.SpeedController;
-import com.revrobotics.*;
+
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 
 public class Intake extends Subsystem {
 
-    private Spark intakyBoiBall;
-    private Spark intakyBoiHatch;
+    private WPI_TalonSRX wrist;
+    private WPI_TalonSRX wheels;
 
     public Intake() {
-        intakyBoiBall = new Spark(1);
-        addChild("IntakyBoiBall",intakyBoiBall);
-        intakyBoiBall.setInverted(false);
-        intakyBoiBall.setBounds(2, 2, 1.5, 1, 1);
-
-        intakyBoiHatch = new Spark(0);
-        addChild("IntakyBoiHatch",intakyBoiHatch);
-        intakyBoiHatch.setInverted(false);
-        intakyBoiHatch.setBounds(2, 2, 1.5, 1, 1);
+        final RobotConfig config = RobotConfig.getInstance();
+        wheels =   new WPI_TalonSRX(config.intakeConfig.intake);
+        wrist = new WPI_TalonSRX(config.intakeConfig.loader);
     }
 
     @Override
@@ -31,20 +22,17 @@ public class Intake extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
-
-    public void intake(int intake){
-        if(intake == 0){intakyBoiBall.setSpeed(.6);}
-        if(intake == 1){intakyBoiHatch.setSpeed(.6);}
+    public void setIntakeSpeed(double precentSpeed)
+    {
+        wheels.set(ControlMode.PercentOutput, precentSpeed);
     }
-
-    public void outtake(int intake){
-        if(intake == 0){intakyBoiBall.setSpeed(-.6);}
-        if(intake == 1){intakyBoiHatch.setSpeed(-.6);}
+    public void setWristSpeed(double precentSpeed)
+    {
+        wrist.set(ControlMode.PercentOutput, precentSpeed);
     }
 
     public void shutdown(){
-        intakyBoiBall.setSpeed(0);
-        intakyBoiHatch.setSpeed(0);
+
     }
 
     @Override

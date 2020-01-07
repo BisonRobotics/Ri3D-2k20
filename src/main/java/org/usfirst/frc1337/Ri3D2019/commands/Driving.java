@@ -1,9 +1,7 @@
 package org.usfirst.frc1337.Ri3D2019.commands;
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
 import org.usfirst.frc1337.Ri3D2019.Robot;
-import org.usfirst.frc1337.Ri3D2019.subsystems.Drivetrain;
 
 /**
  *

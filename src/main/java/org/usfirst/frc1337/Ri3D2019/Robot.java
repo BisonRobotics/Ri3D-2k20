@@ -1,13 +1,9 @@
 package org.usfirst.frc1337.Ri3D2019;
 
-import edu.wpi.first.wpilibj.MotorSafety;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 import edu.wpi.first.wpilibj.smartdashboard.SendableChooser;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
-import org.usfirst.frc1337.Ri3D2019.commands.*;
 import org.usfirst.frc1337.Ri3D2019.subsystems.*;
 
 /**
@@ -27,7 +23,9 @@ public class Robot extends TimedRobot {
     public static Drivetrain drivetrain;
     public static WoF spinner;
     public static Intake intake;
-    public static climber climber;
+    public static ShooterSubsystem shooter;
+    public static ClimbSubsystem climb;
+    public static LEDSubsystem led;
 
     /**
      * This function is run when the robot is first started up and should be
@@ -39,7 +37,9 @@ public class Robot extends TimedRobot {
         drivetrain = new Drivetrain();
         spinner = new WoF();
         intake = new Intake();
-        climber = new climber();
+        shooter = new ShooterSubsystem();
+        climb = new ClimbSubsystem();
+        led = new LEDSubsystem();
 
         oi = new OI();
 

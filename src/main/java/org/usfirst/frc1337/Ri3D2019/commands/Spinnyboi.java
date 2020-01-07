@@ -1,9 +1,7 @@
 package org.usfirst.frc1337.Ri3D2019.commands;
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 import org.usfirst.frc1337.Ri3D2019.Robot;
-import org.usfirst.frc1337.Ri3D2019.subsystems.WoF;;
 
 
 public class Spinnyboi extends Command {
