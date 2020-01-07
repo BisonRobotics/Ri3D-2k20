@@ -36,6 +36,10 @@ public class Intake extends Subsystem {
         wheels.set(ControlMode.PercentOutput, precentSpeed);
         indexer.set(precentSpeed*-1);
     }
+    public void setIndexSpeed(double precentSpeed)
+    {
+        index.set(ControlMode.PercentOutput, precentSpeed);
+    }
     public void setWristSpeed(double precentSpeed)
     {
         wrist.set(ControlMode.PercentOutput, precentSpeed);
