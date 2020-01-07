@@ -3,10 +3,10 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
-import org.wfrobotics.reuse.hardware.TalonFactory;
-import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
-import org.wfrobotics.robot.commands.Shooter.ShootNone;
-import org.wfrobotics.robot.config.RobotConfig;
+import frc.reuse.hardware.TalonFactory;
+import frc.reuse.subsystems.EnhancedSubsystem;
+import frc.robot.commands.Shooter.ShootNone;
+import frc.robot.config.RobotConfig;
 
 public final class ShooterSubsystem extends EnhancedSubsystem
 {

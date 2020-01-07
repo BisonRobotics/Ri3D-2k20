@@ -3,9 +3,9 @@ package frc.robot.subsystems;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
-import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
-import org.wfrobotics.robot.commands.climb.ClimbNone;
-import org.wfrobotics.robot.config.RobotConfig;
+import frc.reuse.subsystems.EnhancedSubsystem;
+import frc.robot.commands.climb.ClimbNone;
+import frc.robot.config.RobotConfig;
 
 public final class ClimbSubsystem extends EnhancedSubsystem {
     static class SingletonHolder {

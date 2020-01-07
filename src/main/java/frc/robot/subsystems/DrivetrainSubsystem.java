@@ -5,11 +5,11 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
-import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
-import org.wfrobotics.robot.commands.drive.*;
-import org.wfrobotics.robot.config.RobotConfig;
+import frc.reuse.subsystems.EnhancedSubsystem;
+import frc.robot.commands.drive.*;
+import frc.robot.config.RobotConfig;
 
-import org.wfrobotics.robot.config.IO;
+import frc.robot.config.IO;
 
 public class DrivetrainSubsystem extends EnhancedSubsystem {
 
