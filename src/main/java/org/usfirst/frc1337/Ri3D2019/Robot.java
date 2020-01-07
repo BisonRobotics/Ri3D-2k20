@@ -26,6 +26,7 @@ public class Robot extends TimedRobot {
     public static ShooterSubsystem shooter;
     public static ClimbSubsystem climb;
     public static LEDSubsystem led;
+    public static BeltSubsystem belt;
 
     /**
      * This function is run when the robot is first started up and should be
@@ -40,6 +41,7 @@ public class Robot extends TimedRobot {
         shooter = new ShooterSubsystem();
         climb = new ClimbSubsystem();
         led = new LEDSubsystem();
+        belt = new BeltSubsystem();
 
         oi = new OI();
 

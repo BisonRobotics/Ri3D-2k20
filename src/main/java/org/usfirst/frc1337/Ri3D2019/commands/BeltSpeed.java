@@ -1,11 +1,9 @@
 package org.usfirst.frc1337.Ri3D2019.commands;
 
-import java.lang.module.ModuleDescriptor.Requires;
 
 import org.usfirst.frc1337.Ri3D2019.Robot;
 
 import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj2.command.CommandBase;
 
 public class BeltSpeed extends Command
 {
@@ -17,7 +15,7 @@ public class BeltSpeed extends Command
     }
     protected void init()
     {
-        Robot.shooter.setBeltSpeed(speed);
+        Robot.belt.setBeltSpeed(speed);
     }
 
     public void execute() {
