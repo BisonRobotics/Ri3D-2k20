@@ -3,9 +3,11 @@ package frc.robot.subsystems;
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 
-import frc.reuse.subsystems.EnhancedSubsystem;
+import org.wfrobotics.reuse.hardware.TalonFactory;
+import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
 
 import frc.robot.commands.intake.IntakeNone;
+import frc.robot.config.RobotConfig;
 
 public final class IntakeSubsystem extends EnhancedSubsystem
 {
@@ -24,19 +26,14 @@ public final class IntakeSubsystem extends EnhancedSubsystem
 
     public IntakeSubsystem()
     {
-        //final RobotConfig config = RobotConfig.getInstance();
-        intake = new TalonSRX(24);
-        intake.setInverted(true);
-
-        loader = new TalonSRX(14);
-        loader.setInverted(true);
-
-        deploy = new TalonSRX(20);
-        deploy.setInverted(true);
+        final RobotConfig config = RobotConfig.getInstance();
+        intake = TalonFactory.makeTalon(config.intakeConfig.intake);
+        loader = TalonFactory.makeTalon(config.intakeConfig.loader);
+        deploy = TalonFactory.makeTalon(config.intakeConfig.deploy);
     }
     public void setPercentDeploy(double percentSpeed)
     {
-        deploy.set(ControlMode.PercentOutput, 0.6);
+        intake.set(ControlMode.PercentOutput, percentSpeed);
     }
     public void setIntakeSpeed(double precentSpeed)
     {
@@ -66,6 +63,8 @@ public final class IntakeSubsystem extends EnhancedSubsystem
     public TestReport runFunctionalTest()
     {
         TestReport report = new TestReport();
+
+        report.add(getDefaultCommand().doesRequire(this));
 
         return report;
     }  
