@@ -30,7 +30,7 @@ public class RobotConfig
     public class ShooterConfig
     {
         public int belt = 22;
-        public int flywheel = 7;
+        public int flywheel = 25;
 
     }
     public class ClimbConfig
@@ -47,9 +47,9 @@ public class RobotConfig
     }
     public class IntakeConfig
     {
-        public int intake = 8;
-        public int loader = 24;
-        public int deploy = 69;
+        public int intake = 24;
+        public int loader = 5; // this is a spark
+        public int deploy = 20;
     }
 
     private static RobotConfig instance = null;

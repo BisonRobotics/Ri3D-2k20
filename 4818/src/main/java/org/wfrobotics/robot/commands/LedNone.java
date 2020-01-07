@@ -16,7 +16,7 @@ public class LedNone extends Command
 
     protected void execute()
     {
-      led.changeColor();
+      led.changeColorGreen();
     }
 
     protected boolean isFinished()

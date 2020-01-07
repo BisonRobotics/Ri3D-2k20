@@ -26,13 +26,31 @@ public final class LEDSubsystem extends EnhancedSubsystem
     public LEDSubsystem()
     {
         final RobotConfig config = RobotConfig.getInstance();
-        Leds = new Spark(0);
+		Leds = new Spark(0);
+		changeColorBlack();
     }
 
-    public void changeColor()
+    public void changeColorGreen()
     {
-        Leds.set(BlinkinDict.Color.GOLD.value);
+        Leds.set(BlinkinDict.Color.GREEN.value);
+	}
+	public void changeColorYellow()
+    {
+        Leds.set(BlinkinDict.Color.YELLOW.value);
+	}
+	public void changeColorRed()
+    {
+        Leds.set(BlinkinDict.Color.RED.value);
+	}
+	public void changeColorBlue()
+    {
+        Leds.set(BlinkinDict.Color.SKY_BLUE.value);
+	}
+	public void changeColorBlack()
+    {
+        Leds.set(BlinkinDict.Color.BLACK.value);
     }
+
 
     protected void initDefaultCommand()
     {

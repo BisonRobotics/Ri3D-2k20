@@ -21,6 +21,7 @@ public final class Robot extends PrototypeEnhancedRobot
     public Robot()
     {
         super(RobotState.getInstance(), IO.getInstance());
+
     }
 
     protected void registerRobotSpecific()
@@ -31,7 +32,6 @@ public final class Robot extends PrototypeEnhancedRobot
         subsystems.register(WofFSubsystem.getInstance());
         // subsystems.register(DrivetrainSubsystem.getInstance());
         subsystems.register(LEDSubsystem.getInstance());
-
     }
 
     @Override
