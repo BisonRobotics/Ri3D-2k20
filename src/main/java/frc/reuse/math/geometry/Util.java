@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.geometry;
+package frc.reuse.math.geometry;
 
 import java.util.List;
 

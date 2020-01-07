@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.utilities;
+package frc.reuse.utilities;
 
-import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
+import frc.reuse.subsystems.EnhancedSubsystem;
 
 /**
  * Includes self-testing
@@ -24,7 +24,7 @@ public interface Testable
         System.out.println(String.format("--- %s Test ---", name));
         if (systemUnderTest instanceof EnhancedSubsystem)
         {
-            System.out.print(String.format("%s default command: %s\n", name, ((EnhancedSubsystem) systemUnderTest).getDefaultCommandName()));
+            //System.out.print(String.format("%s default command: %s\n", name, ((EnhancedSubsystem) systemUnderTest).getDefaultCommandName()));
         }
         result = systemUnderTest.runFunctionalTest();
         System.out.println(String.format("%s Test: %s\n", name, (result.allPassed()) ? "SUCCESS" : "FAILURE"));

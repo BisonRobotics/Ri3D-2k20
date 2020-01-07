@@ -1,17 +1,15 @@
 package frc.robot.commands.Shooter;
 
-import frc.robot.subsystems.IntakeSubsystem;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.ShooterSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
-
-public class BeltSpeed extends Command
+public class BeltSpeed extends CommandBase
 {
     private final ShooterSubsystem shooter = ShooterSubsystem.getInstance();
     double speed;
     public BeltSpeed(double precentSpeed)
     {
-        requires(shooter);
+        addRequirements(shooter);
         this.speed = precentSpeed;
     }
     protected void init()
@@ -19,13 +17,11 @@ public class BeltSpeed extends Command
         shooter.setBeltSpeed(speed);
     }
 
-    protected void execute()
-    {
+    public void execute() {
 
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         shooter.setBeltSpeed(0);
         return false;
     }

@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.math.geometry;
+package frc.reuse.math.geometry;
 
-import static org.wfrobotics.reuse.math.geometry.Util.kEpsilon;
+import static frc.reuse.math.geometry.Util.kEpsilon;
 
 import java.text.DecimalFormat;
 

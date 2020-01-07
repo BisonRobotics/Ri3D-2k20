@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
 import com.ctre.phoenix.ParamEnum;
 import com.ctre.phoenix.motorcontrol.LimitSwitchNormal;

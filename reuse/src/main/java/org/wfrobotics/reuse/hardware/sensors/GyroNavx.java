@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.hardware.sensors;
+package frc.reuse.hardware.sensors;
 
-import org.wfrobotics.reuse.math.HerdAngle;
+import frc.reuse.math.HerdAngle;
 
 import com.kauailabs.navx.frc.AHRS;
 

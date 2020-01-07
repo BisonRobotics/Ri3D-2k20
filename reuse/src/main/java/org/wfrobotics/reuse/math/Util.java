@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math;
+package frc.reuse.math;
 
 public final class Util
 {

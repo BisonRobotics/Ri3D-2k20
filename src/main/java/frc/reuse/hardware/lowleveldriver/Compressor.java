@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware.lowleveldriver;
+package frc.reuse.hardware.lowleveldriver;
 
 import edu.wpi.first.wpilibj.smartdashboard.SendableBuilder;
 

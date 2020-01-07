@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.interpolation;
+package frc.reuse.math.interpolation;
 
 /**
  * A Double that can be interpolated using the InterpolatingTreeMap.

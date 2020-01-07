@@ -1,27 +1,25 @@
-package org.wfrobotics.reuse.commands;
+package frc.reuse.commands;
 
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.PrototypeEnhancedRobot;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.*;
 
 /**
  * Alert the Human players to do something. Use in whileheld button
  * @author STEM Alliance of Fargo Moorhead
  */
-public class SignalHumanPlayer extends Command
+public class SignalHumanPlayer extends CommandBase
 {
-    protected void initialize()
-    {
-        EnhancedRobot.leds.signalHumanPlayer();
+    public void initialize() {
+        PrototypeEnhancedRobot.leds.signalHumanPlayer();
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         return false;
     }
 
     protected void end()
     {
-        EnhancedRobot.leds.useRobotModeColor();
+        PrototypeEnhancedRobot.leds.useRobotModeColor();
     }
 }

@@ -1,10 +1,10 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.ConsoleLogger;
 
 /** @author STEM Alliance of Fargo Moorhead */
 public abstract class TalonConfig

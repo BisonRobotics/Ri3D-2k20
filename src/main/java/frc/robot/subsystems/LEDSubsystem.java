@@ -1,13 +1,7 @@
 package frc.robot.subsystems;
 
-import com.ctre.phoenix.motorcontrol.ControlMode;
-import com.ctre.phoenix.motorcontrol.can.TalonSRX;
-
-import frc.reuse.hardware.TalonFactory;
 import frc.reuse.subsystems.EnhancedSubsystem;
 import frc.robot.commands.LedNone;
-import frc.robot.commands.climb.ClimbNone;
-import frc.robot.config.RobotConfig;
 
 import edu.wpi.first.wpilibj.Spark;
 
@@ -25,7 +19,6 @@ public final class LEDSubsystem extends EnhancedSubsystem
     Spark Leds;
     public LEDSubsystem()
     {
-        final RobotConfig config = RobotConfig.getInstance();
         Leds = new Spark(0);
     }
 
@@ -52,7 +45,6 @@ public final class LEDSubsystem extends EnhancedSubsystem
     {
         TestReport report = new TestReport();
 
-        report.add(getDefaultCommand().doesRequire(this));
 
         return report;
     }

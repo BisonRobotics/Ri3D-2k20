@@ -1,8 +1,8 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.math.HerdAngle;
-import org.wfrobotics.reuse.math.HerdVector;
+import frc.reuse.math.HerdAngle;
+import frc.reuse.math.HerdVector;
 
 // TODO cross broken? parallel should have mag zero
 

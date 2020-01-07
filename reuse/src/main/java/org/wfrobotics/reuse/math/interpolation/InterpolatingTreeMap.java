@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.interpolation;
+package frc.reuse.math.interpolation;
 
 import java.util.Map;
 import java.util.TreeMap;

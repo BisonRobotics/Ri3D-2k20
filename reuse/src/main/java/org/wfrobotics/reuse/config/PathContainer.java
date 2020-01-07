@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.subsystems.drive.Path;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.subsystems.drive.Path;
 
 /**
  * Holds a {@link Path}, allows modification to the path

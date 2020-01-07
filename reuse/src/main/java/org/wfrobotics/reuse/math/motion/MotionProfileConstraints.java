@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.motion;
+package frc.reuse.math.motion;
 
 /**
  * Config for building a {@link MotionProfile} path.

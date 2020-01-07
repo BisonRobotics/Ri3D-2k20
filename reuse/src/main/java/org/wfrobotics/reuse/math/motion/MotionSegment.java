@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.math.motion;
+package frc.reuse.math.motion;
 
-import static org.wfrobotics.reuse.math.geometry.Util.epsilonEquals;
+import static frc.reuse.math.geometry.Util.epsilonEquals;
 
 /**
  * Two {@link MotionState}s that define a piece of a path between two waypoints with constant acceleration

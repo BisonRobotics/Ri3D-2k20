@@ -1,14 +1,14 @@
-package org.wfrobotics.reuse;
+package frc.reuse;
 
 import java.util.Map;
 
-import org.wfrobotics.reuse.math.geometry.Kinematics;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingDouble;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingTreeMap;
-import org.wfrobotics.reuse.utilities.Reportable;
+import frc.reuse.math.geometry.Kinematics;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Twist2d;
+import frc.reuse.math.interpolation.InterpolatingDouble;
+import frc.reuse.math.interpolation.InterpolatingTreeMap;
+import frc.reuse.utilities.Reportable;
 
 
 /** RobotStateBase provides global, formatted state of the robot for reuse subsystems

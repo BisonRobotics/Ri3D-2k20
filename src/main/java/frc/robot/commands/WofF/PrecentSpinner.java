@@ -1,30 +1,30 @@
 package frc.robot.commands.WofF;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.WofFSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
 
-public class PrecentSpinner extends Command
+public class PrecentSpinner extends CommandBase
 {
     private final WofFSubsystem WofF = WofFSubsystem.getInstance();
     double speed;
     public PrecentSpinner(double precentSpeed)
     {
-        requires(WofF);
+        addRequirements(WofF);
         this.speed = precentSpeed;
     }
     
-    protected void init( )
+
+    protected void init()
     {
         WofF.setSpinner(speed);
 
     }
-    protected void execute()
-    {
+    
+    public void execute() {
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         WofF.setSpinner(0);
 
         return false;

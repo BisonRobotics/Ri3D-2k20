@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.math.HerdVector;
+import frc.reuse.math.HerdVector;
 
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 import edu.wpi.first.wpilibj.GenericHID.RumbleType;

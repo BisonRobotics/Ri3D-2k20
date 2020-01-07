@@ -1,4 +1,4 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -7,15 +7,15 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.config.PathBuilder;
-import org.wfrobotics.reuse.config.PathBuilder.Waypoint;
-import org.wfrobotics.reuse.math.geometry.ITranslation2d;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.math.motion.MotionState;
-import org.wfrobotics.reuse.subsystems.drive.Path;
-import org.wfrobotics.reuse.subsystems.drive.PathSegment;
+import frc.reuse.config.PathBuilder;
+import frc.reuse.config.PathBuilder.Waypoint;
+import frc.reuse.math.geometry.ITranslation2d;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.math.motion.MotionState;
+import frc.reuse.subsystems.drive.Path;
+import frc.reuse.subsystems.drive.PathSegment;
 
 public class PathAdaptorTest
 {

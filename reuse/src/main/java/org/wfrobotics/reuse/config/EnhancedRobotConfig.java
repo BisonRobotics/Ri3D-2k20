@@ -1,8 +1,8 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import java.util.Optional;
 
-import org.wfrobotics.reuse.config.TankConfig.TankConfigSupplier;
+import frc.reuse.config.TankConfig.TankConfigSupplier;
 
 public abstract class EnhancedRobotConfig implements TankConfigSupplier
 {

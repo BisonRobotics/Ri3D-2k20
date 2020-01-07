@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -7,9 +7,9 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.function.Consumer;
 
-import org.wfrobotics.reuse.config.TalonConfig.ClosedLoopConfig;
-import org.wfrobotics.reuse.config.TalonConfig.Gains;
-import org.wfrobotics.reuse.utilities.Reportable;
+import frc.reuse.config.TalonConfig.ClosedLoopConfig;
+import frc.reuse.config.TalonConfig.Gains;
+import frc.reuse.utilities.Reportable;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;

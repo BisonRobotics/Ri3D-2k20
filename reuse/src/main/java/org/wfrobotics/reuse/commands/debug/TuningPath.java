@@ -1,17 +1,17 @@
-package org.wfrobotics.reuse.commands.debug;
+package frc.reuse.commands.debug;
 
 import java.util.ArrayList;
 
-import org.wfrobotics.reuse.commands.config.ResetPose;
-import org.wfrobotics.reuse.commands.drive.DrivePath;
-import org.wfrobotics.reuse.config.PathBuilder;
-import org.wfrobotics.reuse.config.PathBuilder.Waypoint;
-import org.wfrobotics.reuse.config.PathContainer;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.subsystems.drive.Path;
-import org.wfrobotics.reuse.subsystems.drive.TankMaths;
+import frc.reuse.commands.config.ResetPose;
+import frc.reuse.commands.drive.DrivePath;
+import frc.reuse.config.PathBuilder;
+import frc.reuse.config.PathBuilder.Waypoint;
+import frc.reuse.config.PathContainer;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.subsystems.drive.Path;
+import frc.reuse.subsystems.drive.TankMaths;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 import edu.wpi.first.wpilibj.command.WaitCommand;

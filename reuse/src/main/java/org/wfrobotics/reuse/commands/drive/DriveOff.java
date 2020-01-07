@@ -1,9 +1,9 @@
-package org.wfrobotics.reuse.commands.drive;
+package frc.reuse.commands.drive;
 
-import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.config.EnhancedIO;
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.subsystems.drive.TankSubsystem;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.config.EnhancedIO;
+import frc.reuse.EnhancedRobot;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.command.Command;

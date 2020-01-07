@@ -1,13 +1,13 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.math.motion.MotionState;
-import org.wfrobotics.reuse.subsystems.drive.Path;
-import org.wfrobotics.reuse.subsystems.drive.PathSegment;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.math.motion.MotionState;
+import frc.reuse.subsystems.drive.Path;
+import frc.reuse.subsystems.drive.PathSegment;
 
 public class PathTest
 {

@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.math.motion;
+package frc.reuse.math.motion;
 
-import org.wfrobotics.reuse.math.motion.MotionProfileGoal.CompletionBehavior;
+import frc.reuse.math.motion.MotionProfileGoal.CompletionBehavior;
 
 /**
  * Builds a {@link MotionProfile} path.

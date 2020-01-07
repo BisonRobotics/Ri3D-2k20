@@ -1,4 +1,4 @@
-package org.wfrobotics.robot.config;
+package frc.robot.config;
 public class RobotConfig
 {
     public DriveConfig driveConfig;

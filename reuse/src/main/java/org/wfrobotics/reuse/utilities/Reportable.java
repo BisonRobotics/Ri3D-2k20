@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.utilities;
+package frc.reuse.utilities;
 
 import edu.wpi.first.wpilibj.command.Scheduler;
 

@@ -1,14 +1,12 @@
-package org.wfrobotics.reuse;
+package frc.reuse;
 
 import java.util.Map;
 
-import org.wfrobotics.reuse.math.geometry.Kinematics;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingDouble;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingTreeMap;
-import org.wfrobotics.reuse.utilities.Reportable;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Twist2d;
+import frc.reuse.math.interpolation.InterpolatingDouble;
+import frc.reuse.math.interpolation.InterpolatingTreeMap;
+import frc.reuse.utilities.Reportable;
 
 
 /** RobotStateBase provides global, formatted state of the robot for reuse subsystems
@@ -49,7 +47,6 @@ public abstract class RobotStateBase implements Reportable
     /** Process the latest drivetrain encoder data for odometry (estimate position of robot) */
     public synchronized void addRobotObservation(double timestamp, Twist2d measured_velocity, Twist2d predicted_velocity)
     {
-        addFieldToVehicleObservation(timestamp, Kinematics.integrateForwardKinematics(getLatestFieldToVehicle().getValue(), measured_velocity));
         vehicle_velocity_measured_ = measured_velocity;
         vehicle_velocity_predicted_ = predicted_velocity;
     }
@@ -86,13 +83,7 @@ public abstract class RobotStateBase implements Reportable
         return vehicle_velocity_predicted_;
     }
 
-    public synchronized Twist2d getRobotOdometry(double left_encoder_delta_distance, double right_encoder_delta_distance, Rotation2d current_gyro_angle)
-    {
-        final Pose2d last_measurement = getLatestFieldToVehicle().getValue();
-        final Twist2d delta = Kinematics.forwardKinematics(last_measurement.getRotation(), left_encoder_delta_distance, right_encoder_delta_distance, current_gyro_angle);
-        distance_driven_ += delta.dx;
-        return delta;
-    }
+  
 
     /** Reset all drive state to its default values (robot stationary) */
     public synchronized void resetDriveState(double start_time, Pose2d initial_field_to_vehicle)

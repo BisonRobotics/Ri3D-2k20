@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware.lowleveldriver;
+package frc.reuse.hardware.lowleveldriver;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;

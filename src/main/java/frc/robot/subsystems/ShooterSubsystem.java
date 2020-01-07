@@ -56,7 +56,6 @@ public final class ShooterSubsystem extends EnhancedSubsystem
     {
         TestReport report = new TestReport();
 
-        report.add(getDefaultCommand().doesRequire(this));
 
         return report;
     }  

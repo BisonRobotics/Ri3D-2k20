@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math;
+package frc.reuse.math;
 
 public class HerdAngle implements WrappedAngle
 {

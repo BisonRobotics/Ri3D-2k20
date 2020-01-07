@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.geometry;
+package frc.reuse.math.geometry;
 
 /**
  * RigidTransform2d combines a Translation2d and Rotation2d to describe <b>robot location <i>and</i> orientation</b> called a <b>"pose"</b>.

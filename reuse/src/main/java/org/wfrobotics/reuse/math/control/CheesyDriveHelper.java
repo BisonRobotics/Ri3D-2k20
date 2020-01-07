@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.control;
+package frc.reuse.math.control;
 
 /**
  * Helper class to implement "Cheesy Drive". "Cheesy Drive" simply means that the "turning" stick controls the curvature

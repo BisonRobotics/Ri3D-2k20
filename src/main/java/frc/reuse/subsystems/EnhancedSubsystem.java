@@ -1,18 +1,17 @@
-package org.wfrobotics.reuse.subsystems;
+package frc.reuse.subsystems;
 
-import org.wfrobotics.reuse.utilities.Reportable;
-import org.wfrobotics.reuse.utilities.Testable;
+import frc.reuse.utilities.Reportable;
+import frc.reuse.utilities.Testable;
 
 import edu.wpi.first.wpilibj.Sendable;
-import edu.wpi.first.wpilibj.command.Scheduler;
-import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SendableBuilder;
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 /**
  * STEM Alliance enhanced {@link Subsystem}
  * @author STEM Alliance of Fargo Moorhead
  */
-public abstract class EnhancedSubsystem extends Subsystem implements Reportable, Testable
+public abstract class EnhancedSubsystem extends SubsystemBase implements Reportable, Testable
 {
     /**
      * Update <b>before</b> {@link Scheduler} is run.
@@ -23,8 +22,6 @@ public abstract class EnhancedSubsystem extends Subsystem implements Reportable,
     // We don't use these
     @Override
     public void addChild(String name, Sendable child) { }
-    @Override
-    public void addChild(Sendable child) { }
     @Override
     public void initSendable(SendableBuilder builder) { }
 }

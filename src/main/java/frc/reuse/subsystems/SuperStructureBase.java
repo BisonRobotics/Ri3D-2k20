@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.subsystems;
+package frc.reuse.subsystems;
 
-import org.wfrobotics.reuse.hardware.lowleveldriver.Compressor;
+import frc.reuse.hardware.lowleveldriver.Compressor;
 
 /**
  * Parent {@link EnhancedSubsystem} for everything on the structure that connects the subsystems
@@ -63,7 +63,6 @@ public abstract class SuperStructureBase extends EnhancedSubsystem
             System.out.println("WARNING: Make sure your compressor is set to CAN address zero in Internet Explorer");
         }
 
-        report.add(getDefaultCommand().doesRequire(this));
 
         // Status LED:
         //     Green = No faults

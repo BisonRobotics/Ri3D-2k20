@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.commands.wait;
+package frc.reuse.commands.wait;
 
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.RobotStateBase;
+import frc.reuse.EnhancedRobot;
+import frc.reuse.RobotStateBase;
 
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;

@@ -1,8 +1,8 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
-import org.wfrobotics.reuse.config.TankConfig;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.config.TankConfig;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.EnhancedRobot;
 
 public final class TankMaths
 {

@@ -1,9 +1,9 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.math.geometry.Twist2d;
 
 /**
  * <b>Steers the robot (heading corrects)</b> by <i>"looking ahead"</i> at future points in the path

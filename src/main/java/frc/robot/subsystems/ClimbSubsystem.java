@@ -3,6 +3,7 @@ package frc.robot.subsystems;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
+import edu.wpi.first.wpilibj2.command.Command;
 import frc.reuse.subsystems.EnhancedSubsystem;
 import frc.robot.commands.climb.ClimbNone;
 import frc.robot.config.RobotConfig;
@@ -21,11 +22,11 @@ public final class ClimbSubsystem extends EnhancedSubsystem {
 
     public ClimbSubsystem() {
         final RobotConfig config = RobotConfig.getInstance();
-        //Set up the SPARKS
+        // Set up the SPARKS
         motor1 = new CANSparkMax(config.climbConfig.climbMaster, MotorType.kBrushless);
         motor2 = new CANSparkMax(config.climbConfig.climbSlave, MotorType.kBrushless);
 
-        //Clear any residual bad values
+        // Clear any residual bad values
         motor1.restoreFactoryDefaults();
         motor2.restoreFactoryDefaults();
 
@@ -34,12 +35,12 @@ public final class ClimbSubsystem extends EnhancedSubsystem {
     }
 
     public void setPrecentSpeedUp(double speed) {
-        //Set output speed
+        // Set output speed
         motor1.set(speed);
     }
 
     protected void initDefaultCommand() {
-        setDefaultCommand(new ClimbNone());
+        setDefaultCommand((Command) new ClimbNone());
     }
 
     public void cacheSensors(boolean isDisabled) {
@@ -52,7 +53,6 @@ public final class ClimbSubsystem extends EnhancedSubsystem {
     public TestReport runFunctionalTest() {
         TestReport report = new TestReport();
 
-        report.add(getDefaultCommand().doesRequire(this));
 
         return report;
     }

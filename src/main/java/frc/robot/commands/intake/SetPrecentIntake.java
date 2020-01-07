@@ -1,16 +1,16 @@
 package frc.robot.commands.intake;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.IntakeSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
 
-public class SetPrecentIntake extends Command
+public class SetPrecentIntake extends CommandBase
 {
     private final IntakeSubsystem intake = IntakeSubsystem.getInstance();
     double speed;
     public SetPrecentIntake(double precentSpeed)
     {
-        requires(intake);
+        addRequirements(intake);
         this.speed = precentSpeed;
     }
     public void init()
@@ -18,13 +18,11 @@ public class SetPrecentIntake extends Command
         intake.setIntakeSpeed(speed);
     }
 
-    protected void execute()
-    {
+    public void execute() {
 
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         intake.setIntakeSpeed(0);
         return false;
     }

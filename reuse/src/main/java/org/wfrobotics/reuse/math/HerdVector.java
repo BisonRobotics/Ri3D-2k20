@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math;
+package frc.reuse.math;
 
 /**
  * @author Team 4818 WFRobotics

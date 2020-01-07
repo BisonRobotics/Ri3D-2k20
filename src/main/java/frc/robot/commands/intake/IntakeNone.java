@@ -1,25 +1,23 @@
 package frc.robot.commands.intake;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.IntakeSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
 
-public class IntakeNone extends Command
+public class IntakeNone extends CommandBase
 {
     private final IntakeSubsystem intake = IntakeSubsystem.getInstance();
 
     public IntakeNone()
     {
-        requires(intake);
+        addRequirements(intake);
     }
 
-    protected void execute()
-    {
+    public void execute() {
 
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         return false;
     }
 

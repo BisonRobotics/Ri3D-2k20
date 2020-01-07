@@ -1,9 +1,9 @@
-package org.wfrobotics.reuse.hardware.lowleveldriver;
+package frc.reuse.hardware.lowleveldriver;
 
 import java.util.List;
 
-import org.wfrobotics.reuse.config.TalonConfig.Gains;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.config.TalonConfig.Gains;
+import frc.reuse.utilities.ConsoleLogger;
 
 import com.ctre.phoenix.motorcontrol.can.TalonSRX;
 

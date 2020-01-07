@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.utilities.FileUtils;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.FileUtils;
 
 /**
  * Picks the {@link RobotConfig} to use for this robot based on a file saved to the RoboRIO

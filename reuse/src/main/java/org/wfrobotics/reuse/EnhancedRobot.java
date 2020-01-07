@@ -1,17 +1,17 @@
-package org.wfrobotics.reuse;
+package frc.reuse;
 
-import org.wfrobotics.reuse.config.AutoFactory;
-import org.wfrobotics.reuse.config.AutoRunner;
-import org.wfrobotics.reuse.config.EnhancedIO;
-import org.wfrobotics.reuse.config.EnhancedRobotConfig;
-import org.wfrobotics.reuse.hardware.LEDs;
-import org.wfrobotics.reuse.hardware.NoLEDs;
-import org.wfrobotics.reuse.subsystems.SubsystemRunner;
-import org.wfrobotics.reuse.subsystems.background.BackgroundUpdater;
-import org.wfrobotics.reuse.subsystems.background.RobotStateEstimator;
-import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.utilities.DashboardView;
+import frc.reuse.config.AutoFactory;
+import frc.reuse.config.AutoRunner;
+import frc.reuse.config.EnhancedIO;
+import frc.reuse.config.EnhancedRobotConfig;
+import frc.reuse.hardware.LEDs;
+import frc.reuse.hardware.NoLEDs;
+import frc.reuse.subsystems.SubsystemRunner;
+import frc.reuse.subsystems.background.BackgroundUpdater;
+import frc.reuse.subsystems.background.RobotStateEstimator;
+import frc.reuse.subsystems.drive.TankSubsystem;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.DashboardView;
 
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.Timer;

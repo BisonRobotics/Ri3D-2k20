@@ -64,8 +64,6 @@ public final class IntakeSubsystem extends EnhancedSubsystem
     {
         TestReport report = new TestReport();
 
-        report.add(getDefaultCommand().doesRequire(this));
-
         return report;
     }  
 }

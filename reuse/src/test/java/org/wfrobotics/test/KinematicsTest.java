@@ -1,8 +1,8 @@
-package org.wfrobotics.test;
+package frc.test;
 
-import org.wfrobotics.reuse.math.geometry.Kinematics;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.math.geometry.Kinematics;
+import frc.reuse.math.geometry.Twist2d;
+import frc.reuse.utilities.ConsoleLogger;
 
 public class KinematicsTest
 {

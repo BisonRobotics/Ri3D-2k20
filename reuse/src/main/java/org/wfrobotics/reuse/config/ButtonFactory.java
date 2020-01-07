@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.config.Xbox.AXIS;
+import frc.reuse.config.Xbox.AXIS;
 
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.command.Command;

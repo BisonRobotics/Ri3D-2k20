@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.hardware.sensors;
+package frc.reuse.hardware.sensors;
 
-import org.wfrobotics.reuse.math.Util;
+import frc.reuse.math.Util;
 
 /**
  * Class to use a Magnetic Potentiometer like an analog

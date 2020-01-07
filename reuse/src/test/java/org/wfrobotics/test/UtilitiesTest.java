@@ -1,7 +1,7 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.math.Util;
+import frc.reuse.math.Util;
 
 public class UtilitiesTest
 {

@@ -2,25 +2,23 @@ package frc.robot.commands.climb;
 
 import frc.robot.subsystems.ClimbSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.CommandBase;
 
-public class ClimbNone extends Command
+public class ClimbNone extends CommandBase
 {
     private final ClimbSubsystem climb = ClimbSubsystem.getInstance();
 
     public ClimbNone()
     {
-        requires(climb);
+        addRequirements(climb);
     }
 
 
-    protected void execute()
-    {
+    public void execute() {
 
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         return false;
     }
 

@@ -1,9 +1,9 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.config.Xbox.AXIS;
+import frc.reuse.config.Xbox.AXIS;
 
-import edu.wpi.first.wpilibj.buttons.Button;
-import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj2.command.button.*;
+import edu.wpi.first.wpilibj2.command.*;
 
 /**
  * Assigns {@link Command}s to run when {@link Button}s are pressed

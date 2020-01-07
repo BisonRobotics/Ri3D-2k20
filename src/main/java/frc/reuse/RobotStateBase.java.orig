@@ -1,20 +1,20 @@
-package org.wfrobotics.reuse;
+package frc.reuse;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-import org.wfrobotics.reuse.math.geometry.Kinematics;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingDouble;
-import org.wfrobotics.reuse.math.interpolation.InterpolatingTreeMap;
-import org.wfrobotics.reuse.subsystems.vision.CoprocessorData;
-import org.wfrobotics.reuse.subsystems.vision.CoprocessorData.VisionTargetInfo;
-import org.wfrobotics.reuse.subsystems.vision.Point;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.utilities.Reportable;
+import frc.reuse.math.geometry.Kinematics;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Twist2d;
+import frc.reuse.math.interpolation.InterpolatingDouble;
+import frc.reuse.math.interpolation.InterpolatingTreeMap;
+import frc.reuse.subsystems.vision.CoprocessorData;
+import frc.reuse.subsystems.vision.CoprocessorData.VisionTargetInfo;
+import frc.reuse.subsystems.vision.Point;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.Reportable;
 
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;

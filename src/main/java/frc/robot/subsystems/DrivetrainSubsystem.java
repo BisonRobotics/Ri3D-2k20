@@ -59,12 +59,6 @@ public class DrivetrainSubsystem extends EnhancedSubsystem {
     robotDrive.setDeadband(config.driveConfig.deadband);
   }
 
-  @Override
-  public void initDefaultCommand() {
-    // We always gonna be driving boy-o, haters can't stop us
-    setDefaultCommand(new Driving());
-  }
-
   // Main robot driving control
   public void driveeeee() {
     robotDrive.arcadeDrive(OIConfig.getThrottle(), OIConfig.getTurn(), true); // true for squared inputs
@@ -79,8 +73,6 @@ public class DrivetrainSubsystem extends EnhancedSubsystem {
 
   public TestReport runFunctionalTest() {
       TestReport report = new TestReport();
-
-      report.add(getDefaultCommand().doesRequire(this));
 
       return report;
   }

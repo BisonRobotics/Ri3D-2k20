@@ -1,7 +1,7 @@
-package org.wfrobotics.robot;
+package frc.robot;
 
 
-import org.wfrobotics.reuse.RobotStateBase;
+import frc.reuse.RobotStateBase;
 
 /** Provider of global, formatted state about the robot. Consider calling subsystem instance instead. **/
 public final class RobotState extends RobotStateBase

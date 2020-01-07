@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware.sensors;
+package frc.reuse.hardware.sensors;
 
 public interface Gyro
 {

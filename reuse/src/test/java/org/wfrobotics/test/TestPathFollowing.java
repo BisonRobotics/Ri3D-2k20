@@ -1,12 +1,12 @@
-package org.wfrobotics.test;
+package frc.test;
 
-import org.wfrobotics.reuse.config.RobotConfigPicker;
-import org.wfrobotics.reuse.config.TankConfig;
-import org.wfrobotics.reuse.subsystems.drive.SteeringController;
-import org.wfrobotics.reuse.subsystems.drive.TankMaths;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.config.EnhancedRobotConfig;
+import frc.reuse.config.RobotConfigPicker;
+import frc.reuse.config.TankConfig;
+import frc.reuse.subsystems.drive.SteeringController;
+import frc.reuse.subsystems.drive.TankMaths;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.EnhancedRobot;
+import frc.reuse.config.EnhancedRobotConfig;
 
 public class TestPathFollowing
 {

@@ -1,10 +1,10 @@
-package org.wfrobotics.reuse.commands.drive;
+package frc.reuse.commands.drive;
 
-import org.wfrobotics.reuse.math.control.CheesyDriveHelper;
-import org.wfrobotics.reuse.math.control.CheesyDriveHelper.DriveSignal;
-import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.config.EnhancedIO;
+import frc.reuse.math.control.CheesyDriveHelper;
+import frc.reuse.math.control.CheesyDriveHelper.DriveSignal;
+import frc.reuse.subsystems.drive.TankSubsystem;
+import frc.reuse.EnhancedRobot;
+import frc.reuse.config.EnhancedIO;
 
 import edu.wpi.first.wpilibj.command.Command;
 

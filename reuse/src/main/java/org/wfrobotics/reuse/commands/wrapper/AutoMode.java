@@ -1,8 +1,8 @@
-package org.wfrobotics.reuse.commands.wrapper;
+package frc.reuse.commands.wrapper;
 
-import org.wfrobotics.reuse.config.AutoFactory;
-import org.wfrobotics.reuse.config.AutoRunner;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.config.AutoFactory;
+import frc.reuse.config.AutoRunner;
+import frc.reuse.utilities.ConsoleLogger;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 

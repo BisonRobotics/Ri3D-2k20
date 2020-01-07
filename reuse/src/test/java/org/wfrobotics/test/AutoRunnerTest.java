@@ -1,14 +1,14 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.commands.config.AutoConfig;
-import org.wfrobotics.reuse.commands.wrapper.AutoMode;
-import org.wfrobotics.reuse.config.AutoFactory;
-import org.wfrobotics.reuse.config.AutoFactory.DelaySelect;
-import org.wfrobotics.reuse.config.AutoRunner;
-import org.wfrobotics.reuse.config.AutoSelection;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
-import org.wfrobotics.reuse.utilities.Testable;
+import frc.reuse.commands.config.AutoConfig;
+import frc.reuse.commands.wrapper.AutoMode;
+import frc.reuse.config.AutoFactory;
+import frc.reuse.config.AutoFactory.DelaySelect;
+import frc.reuse.config.AutoRunner;
+import frc.reuse.config.AutoSelection;
+import frc.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.Testable;
 
 public class AutoRunnerTest
 {

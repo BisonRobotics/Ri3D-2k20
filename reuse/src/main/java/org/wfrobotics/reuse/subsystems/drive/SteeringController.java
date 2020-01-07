@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
-import org.wfrobotics.reuse.math.HerdAngle;
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.math.HerdAngle;
+import frc.reuse.EnhancedRobot;
 
 /** Controller (does the math) to heading correct (steer) the robot */
 public class SteeringController

@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware.lowleveldriver;
+package frc.reuse.hardware.lowleveldriver;
 
 import java.util.HashMap;
 import java.util.Map;

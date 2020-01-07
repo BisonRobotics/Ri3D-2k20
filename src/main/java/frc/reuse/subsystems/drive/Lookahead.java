@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
 /**
  * A point on a path ahead of where the robot currently is.

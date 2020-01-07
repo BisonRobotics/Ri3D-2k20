@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.interpolation;
+package frc.reuse.math.interpolation;
 
 /**
  * Interpolation: Given two numbers, <b>find a third number that is a percentage in between</b> the two numbers (ex: .75 between 3 & 5 = 4.5)

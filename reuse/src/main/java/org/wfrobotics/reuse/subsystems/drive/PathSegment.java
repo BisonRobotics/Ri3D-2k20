@@ -1,15 +1,15 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
 import java.util.Optional;
 
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.math.motion.MotionProfile;
-import org.wfrobotics.reuse.math.motion.MotionProfileConstraints;
-import org.wfrobotics.reuse.math.motion.MotionProfileGenerator;
-import org.wfrobotics.reuse.math.motion.MotionProfileGoal;
-import org.wfrobotics.reuse.math.motion.MotionState;
-import org.wfrobotics.reuse.subsystems.drive.TankMaths;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.math.motion.MotionProfile;
+import frc.reuse.math.motion.MotionProfileConstraints;
+import frc.reuse.math.motion.MotionProfileGenerator;
+import frc.reuse.math.motion.MotionProfileGoal;
+import frc.reuse.math.motion.MotionState;
+import frc.reuse.subsystems.drive.TankMaths;
 
 /**
  * A path in absolute coordiates

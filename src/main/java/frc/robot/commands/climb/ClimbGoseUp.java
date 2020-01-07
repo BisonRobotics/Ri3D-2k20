@@ -1,26 +1,23 @@
 package frc.robot.commands.climb;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.ClimbSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
-
-public class ClimbGoseUp extends Command
+public class ClimbGoseUp extends CommandBase
 {
     private final ClimbSubsystem climb = ClimbSubsystem.getInstance();
     double speed;
     public ClimbGoseUp(double percentSpeed)
     {
-        requires(climb);
+        addRequirements(climb);
     }
 
 
-    protected void execute()
-    {
+    public void execute() {
         climb.setPrecentSpeedUp(speed);
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         return false;
     }
 

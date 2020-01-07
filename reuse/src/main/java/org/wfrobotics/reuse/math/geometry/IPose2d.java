@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.geometry;
+package frc.reuse.math.geometry;
 
 public interface IPose2d<S> extends IRotation2d<S>, ITranslation2d<S> {
     public Pose2d getPose();

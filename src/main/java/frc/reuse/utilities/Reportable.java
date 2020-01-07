@@ -1,6 +1,5 @@
-package org.wfrobotics.reuse.utilities;
+package frc.reuse.utilities;
 
-import edu.wpi.first.wpilibj.command.Scheduler;
 
 /**
  * Preferred way to output any perodic debugging robot information. Improves {@link Scheduler} performance by allowing commands to run first.

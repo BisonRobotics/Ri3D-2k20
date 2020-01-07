@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.commands.config;
+package frc.reuse.commands.config;
 
-import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
+import frc.reuse.subsystems.drive.TankSubsystem;
 
 import edu.wpi.first.wpilibj.command.InstantCommand;
 

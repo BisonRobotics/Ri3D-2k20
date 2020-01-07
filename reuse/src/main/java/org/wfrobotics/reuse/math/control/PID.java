@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.control;
+package frc.reuse.math.control;
 
 public class PID
 {

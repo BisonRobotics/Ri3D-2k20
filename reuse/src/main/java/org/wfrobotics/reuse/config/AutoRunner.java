@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 

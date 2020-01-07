@@ -1,11 +1,11 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.math.motion.MotionState;
-import org.wfrobotics.reuse.subsystems.drive.TankMaths;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.math.motion.MotionState;
+import frc.reuse.subsystems.drive.TankMaths;
 
 /**
  * Manages progress on a set of {@link PathSegment}s

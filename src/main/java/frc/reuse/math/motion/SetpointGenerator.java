@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.math.motion;
+package frc.reuse.math.motion;
 
 import java.util.Optional;
 

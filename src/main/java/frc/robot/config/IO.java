@@ -1,15 +1,15 @@
-package org.wfrobotics.robot.config;
+package frc.robot.config;
 
-import org.wfrobotics.reuse.config.ButtonFactory;
-import org.wfrobotics.reuse.config.ButtonFactory.TRIGGER;
-import org.wfrobotics.robot.commands.Shooter.BeltSpeed;
-import org.wfrobotics.robot.commands.Shooter.FlywheelPrecent;
-import org.wfrobotics.robot.commands.WofF.PrecentSpinner;
-import org.wfrobotics.robot.commands.climb.DeployPercent;
-import org.wfrobotics.robot.commands.intake.SetPrecentIntake;
-import org.wfrobotics.robot.commands.intake.SetPrecentLoader;
-import org.wfrobotics.reuse.config.EnhancedIO;
-import org.wfrobotics.reuse.config.Xbox;
+import frc.reuse.config.ButtonFactory;
+import frc.reuse.config.ButtonFactory.TRIGGER;
+import frc.robot.commands.Shooter.BeltSpeed;
+import frc.robot.commands.Shooter.FlywheelPrecent;
+import frc.robot.commands.WofF.PrecentSpinner;
+import frc.robot.commands.climb.DeployPercent;
+import frc.robot.commands.intake.SetPrecentIntake;
+import frc.robot.commands.intake.SetPrecentLoader;
+import frc.reuse.config.EnhancedIO;
+import frc.reuse.config.Xbox;
 
 import edu.wpi.first.wpilibj.GenericHID.Hand;
 

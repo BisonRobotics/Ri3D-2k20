@@ -1,14 +1,14 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
-import org.wfrobotics.reuse.math.motion.MotionProfile;
-import org.wfrobotics.reuse.math.motion.MotionProfileConstraints;
-import org.wfrobotics.reuse.math.motion.MotionProfileGenerator;
-import org.wfrobotics.reuse.math.motion.MotionProfileGoal;
-import org.wfrobotics.reuse.math.motion.MotionState;
+import frc.reuse.math.motion.MotionProfile;
+import frc.reuse.math.motion.MotionProfileConstraints;
+import frc.reuse.math.motion.MotionProfileGenerator;
+import frc.reuse.math.motion.MotionProfileGoal;
+import frc.reuse.math.motion.MotionState;
 
 public class MotionProfileTest
 {

@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 /** Maps controllers to Commands **/
 public interface EnhancedIO

@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
-import org.wfrobotics.reuse.hardware.lowleveldriver.BlinkinPatterns;
-import org.wfrobotics.reuse.hardware.lowleveldriver.BlinkinPatterns.PatternName;
+import frc.reuse.hardware.lowleveldriver.BlinkinPatterns;
+import frc.reuse.hardware.lowleveldriver.BlinkinPatterns.PatternName;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.DriverStation.Alliance;

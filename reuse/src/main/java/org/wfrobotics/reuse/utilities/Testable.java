@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.utilities;
+package frc.reuse.utilities;
 
-import org.wfrobotics.reuse.subsystems.EnhancedSubsystem;
+import frc.reuse.subsystems.EnhancedSubsystem;
 
 /**
  * Includes self-testing

@@ -1,8 +1,8 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import java.util.function.Supplier;
 
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.ConsoleLogger;
 
 /**
  * Handles an autonomous option, providing the selected value via callback when the selected value changes

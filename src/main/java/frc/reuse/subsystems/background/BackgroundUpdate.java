@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.subsystems.background;
+package frc.reuse.subsystems.background;
 
 /** Get highly regular calls to your fast service routine.
  *  Good for time critical, period-sensitive adjustments.

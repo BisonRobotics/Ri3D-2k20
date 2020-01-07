@@ -1,12 +1,12 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import java.util.ArrayList;
 
-import org.wfrobotics.reuse.commands.config.AutoConfig;
-import org.wfrobotics.reuse.commands.drive.DriveOff;
-import org.wfrobotics.reuse.commands.wrapper.AutoMode;
-import org.wfrobotics.reuse.config.AutoSelection.SelectionListener;
-import org.wfrobotics.reuse.utilities.Testable;
+import frc.reuse.commands.config.AutoConfig;
+import frc.reuse.commands.drive.DriveOff;
+import frc.reuse.commands.wrapper.AutoMode;
+import frc.reuse.config.AutoSelection.SelectionListener;
+import frc.reuse.utilities.Testable;
 
 import edu.wpi.first.wpilibj.DriverStation;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;

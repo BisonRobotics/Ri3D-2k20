@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.subsystems;
+package frc.reuse.subsystems;
 
-import org.wfrobotics.reuse.utilities.Reportable;
-import org.wfrobotics.reuse.utilities.Testable;
+import frc.reuse.utilities.Reportable;
+import frc.reuse.utilities.Testable;
 
 import edu.wpi.first.wpilibj.Sendable;
 import edu.wpi.first.wpilibj.command.Scheduler;

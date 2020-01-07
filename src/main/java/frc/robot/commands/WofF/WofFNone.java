@@ -1,25 +1,26 @@
 package frc.robot.commands.WofF;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.WofFSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
 
-public class WofFNone extends Command
+public class WofFNone extends CommandBase
 {
     private final WofFSubsystem WofF = WofFSubsystem.getInstance();
 
     public WofFNone()
     {
-        requires(WofF);
+        addRequirements(WofF);
     }
 
-    protected void execute()
-    {
-      WofF.setSpinner(0);
+    private void addRequirements(WofFSubsystem wofF2) {
     }
 
-    protected boolean isFinished()
-    {
+    public void execute() {
+        WofF.setSpinner(0);
+    }
+
+    public boolean isFinished() {
         return false;
     }
 

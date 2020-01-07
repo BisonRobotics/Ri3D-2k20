@@ -1,15 +1,13 @@
-package org.wfrobotics.robot;
+package frc.robot;
 
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.PrototypeEnhancedRobot;
-import org.wfrobotics.robot.config.IO;
-import org.wfrobotics.robot.subsystems.ClimbSubsystem;
-import org.wfrobotics.robot.subsystems.DrivetrainSubsystem;
-import org.wfrobotics.robot.subsystems.DrivetrainSubsystem;
-import org.wfrobotics.robot.subsystems.IntakeSubsystem;
-import org.wfrobotics.robot.subsystems.LEDSubsystem;
-import org.wfrobotics.robot.subsystems.ShooterSubsystem;
-import org.wfrobotics.robot.subsystems.WofFSubsystem;
+import frc.reuse.PrototypeEnhancedRobot;
+import frc.robot.config.IO;
+import frc.robot.subsystems.ClimbSubsystem;
+import frc.robot.subsystems.DrivetrainSubsystem;
+import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.LEDSubsystem;
+import frc.robot.subsystems.ShooterSubsystem;
+import frc.robot.subsystems.WofFSubsystem;
 
 
 /**

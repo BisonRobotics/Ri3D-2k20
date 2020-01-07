@@ -1,9 +1,9 @@
-package org.wfrobotics.test;
+package frc.test;
 
 import java.util.logging.Level;
 
-import org.wfrobotics.reuse.math.HerdVector;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.math.HerdVector;
+import frc.reuse.utilities.ConsoleLogger;
 
 // TODO cross broken? parallel should have mag zero
 

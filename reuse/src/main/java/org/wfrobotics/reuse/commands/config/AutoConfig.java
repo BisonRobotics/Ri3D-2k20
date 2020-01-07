@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.commands.config;
+package frc.reuse.commands.config;
 
 import edu.wpi.first.wpilibj.command.InstantCommand;
 

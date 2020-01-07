@@ -1,8 +1,8 @@
-package org.wfrobotics.reuse.commands.debug;
+package frc.reuse.commands.debug;
 
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.RobotStateBase;
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.RobotStateBase;
+import frc.reuse.EnhancedRobot;
 
 import edu.wpi.first.wpilibj.command.Command;
 

@@ -1,12 +1,12 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-import org.wfrobotics.reuse.config.TalonConfig.ClosedLoopConfig;
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.config.TalonConfig.ClosedLoopConfig;
+import frc.reuse.utilities.ConsoleLogger;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.StatusFrameEnhanced;

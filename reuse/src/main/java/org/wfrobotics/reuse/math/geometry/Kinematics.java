@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.math.geometry;
+package frc.reuse.math.geometry;
 
-import org.wfrobotics.reuse.config.TankConfig;
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.config.TankConfig;
+import frc.reuse.EnhancedRobot;
 
 /**
  * Kinematics: Estimate the robot's motion based on sensor values

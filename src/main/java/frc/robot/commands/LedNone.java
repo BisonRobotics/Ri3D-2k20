@@ -1,26 +1,22 @@
-package org.wfrobotics.robot.commands;
+package frc.robot.commands;
 
-import org.wfrobotics.robot.subsystems.LEDSubsystem;
-import org.wfrobotics.robot.subsystems.WofFSubsystem;
+import edu.wpi.first.wpilibj2.command.CommandBase;
+import frc.robot.subsystems.LEDSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
-
-public class LedNone extends Command
+public class LedNone extends CommandBase
 {
     private final LEDSubsystem led = LEDSubsystem.getInstance();
 
     public LedNone()
     {
-        requires(led);
+        addRequirements(led);
     }
 
-    protected void execute()
-    {
-      led.changeColor();
+    public void execute() {
+        led.changeColor();
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         return false;
     }
 

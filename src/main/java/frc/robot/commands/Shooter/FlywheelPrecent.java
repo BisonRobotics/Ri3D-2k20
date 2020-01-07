@@ -1,16 +1,16 @@
 package frc.robot.commands.Shooter;
 
+import edu.wpi.first.wpilibj2.command.CommandBase;
 import frc.robot.subsystems.ShooterSubsystem;
 
-import edu.wpi.first.wpilibj.command.Command;
 
-public class FlywheelPrecent extends Command
+public class FlywheelPrecent extends CommandBase
 {
     private final ShooterSubsystem shooter = ShooterSubsystem.getInstance();
     double speed;
     public FlywheelPrecent(double precentSpeed)
     {
-        requires(shooter);
+        addRequirements(shooter);
         this.speed = precentSpeed;
     }
     protected void init()
@@ -18,13 +18,11 @@ public class FlywheelPrecent extends Command
         shooter.setFlyWheelSpeed(speed);
     }
 
-    protected void execute()
-    {
+    public void execute() {
 
     }
 
-    protected boolean isFinished()
-    {
+    public boolean isFinished() {
         shooter.setFlyWheelSpeed(0);
         return false;
     }

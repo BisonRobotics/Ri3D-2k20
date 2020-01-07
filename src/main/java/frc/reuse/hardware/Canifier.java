@@ -1,7 +1,7 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
-import org.wfrobotics.reuse.hardware.lowleveldriver.BlinkinPatterns.PatternName;
-import org.wfrobotics.reuse.utilities.Testable;
+import frc.reuse.hardware.lowleveldriver.BlinkinPatterns.PatternName;
+import frc.reuse.utilities.Testable;
 
 import com.ctre.phoenix.CANifier;
 import com.ctre.phoenix.CANifierFaults;

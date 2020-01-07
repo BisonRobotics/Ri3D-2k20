@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.subsystems;
+package frc.reuse.subsystems;
 
-import org.wfrobotics.reuse.hardware.lowleveldriver.Compressor;
+import frc.reuse.hardware.lowleveldriver.Compressor;
 
 /**
  * Parent {@link EnhancedSubsystem} for everything on the structure that connects the subsystems

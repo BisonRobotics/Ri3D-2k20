@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.utilities;
+package frc.reuse.utilities;
 
 import edu.wpi.cscore.UsbCamera;
 import edu.wpi.first.cameraserver.CameraServer;

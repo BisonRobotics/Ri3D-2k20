@@ -1,4 +1,4 @@
-package org.wfrobotics.reuse.hardware;
+package frc.reuse.hardware;
 
 import edu.wpi.first.wpilibj.DriverStation.Alliance;
 

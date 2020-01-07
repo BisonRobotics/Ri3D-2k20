@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.commands.wrapper;
+package frc.reuse.commands.wrapper;
 
-import org.wfrobotics.reuse.utilities.ConsoleLogger;
+import frc.reuse.utilities.ConsoleLogger;
 
 import edu.wpi.first.wpilibj.command.Command;
 import edu.wpi.first.wpilibj.command.CommandGroup;

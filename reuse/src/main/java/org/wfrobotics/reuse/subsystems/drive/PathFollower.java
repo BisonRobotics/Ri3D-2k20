@@ -1,12 +1,12 @@
-package org.wfrobotics.reuse.subsystems.drive;
+package frc.reuse.subsystems.drive;
 
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Twist2d;
-import org.wfrobotics.reuse.math.motion.MotionProfileConstraints;
-import org.wfrobotics.reuse.math.motion.MotionProfileGoal;
-import org.wfrobotics.reuse.math.motion.MotionProfileGoal.CompletionBehavior;
-import org.wfrobotics.reuse.math.motion.MotionState;
-import org.wfrobotics.reuse.math.motion.ProfileFollower;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Twist2d;
+import frc.reuse.math.motion.MotionProfileConstraints;
+import frc.reuse.math.motion.MotionProfileGoal;
+import frc.reuse.math.motion.MotionProfileGoal.CompletionBehavior;
+import frc.reuse.math.motion.MotionState;
+import frc.reuse.math.motion.ProfileFollower;
 
 /**
  * Streams commands to drive a path that are position, velocity, and steering/heading error-corrected

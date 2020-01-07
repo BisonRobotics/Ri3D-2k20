@@ -1,12 +1,12 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
 import java.util.List;
 
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.math.geometry.Rotation2d;
-import org.wfrobotics.reuse.math.geometry.Translation2d;
-import org.wfrobotics.reuse.subsystems.drive.Path;
-import org.wfrobotics.reuse.subsystems.drive.PathSegment;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.math.geometry.Rotation2d;
+import frc.reuse.math.geometry.Translation2d;
+import frc.reuse.subsystems.drive.Path;
+import frc.reuse.subsystems.drive.PathSegment;
 
 /**
  * Glues together a multi-segment {@link Path}. Must contain <i>at least</i> two {@link Waypoint}s.

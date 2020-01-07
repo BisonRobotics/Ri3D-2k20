@@ -1,10 +1,10 @@
-package org.wfrobotics.reuse.commands.config;
+package frc.reuse.commands.config;
 
-import org.wfrobotics.reuse.config.PathContainer;
-import org.wfrobotics.reuse.math.geometry.Pose2d;
-import org.wfrobotics.reuse.subsystems.drive.TankSubsystem;
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.RobotStateBase;
+import frc.reuse.config.PathContainer;
+import frc.reuse.math.geometry.Pose2d;
+import frc.reuse.subsystems.drive.TankSubsystem;
+import frc.reuse.EnhancedRobot;
+import frc.reuse.RobotStateBase;
 
 import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.InstantCommand;

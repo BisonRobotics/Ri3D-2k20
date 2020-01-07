@@ -1,14 +1,14 @@
-package org.wfrobotics.reuse.subsystems;
+package frc.reuse.subsystems;
 
 import java.util.ArrayList;
 import java.util.Optional;
 
-import org.wfrobotics.reuse.config.TalonConfig.ClosedLoopConfig;
-import org.wfrobotics.reuse.hardware.LimitSwitch;
-import org.wfrobotics.reuse.hardware.LimitSwitch.Limit;
-import org.wfrobotics.reuse.hardware.TalonFactory;
-import org.wfrobotics.reuse.EnhancedRobot;
-import org.wfrobotics.reuse.RobotStateBase;
+import frc.reuse.config.TalonConfig.ClosedLoopConfig;
+import frc.reuse.hardware.LimitSwitch;
+import frc.reuse.hardware.LimitSwitch.Limit;
+import frc.reuse.hardware.TalonFactory;
+import frc.reuse.EnhancedRobot;
+import frc.reuse.RobotStateBase;
 
 import com.ctre.phoenix.motorcontrol.ControlMode;
 import com.ctre.phoenix.motorcontrol.DemandType;

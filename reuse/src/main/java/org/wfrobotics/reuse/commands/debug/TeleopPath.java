@@ -1,9 +1,9 @@
-package org.wfrobotics.reuse.commands.debug;
+package frc.reuse.commands.debug;
 
-import org.wfrobotics.reuse.commands.config.ResetPose;
-import org.wfrobotics.reuse.commands.drive.DriveOff;
-import org.wfrobotics.reuse.commands.drive.DrivePath;
-import org.wfrobotics.reuse.config.PathContainer;
+import frc.reuse.commands.config.ResetPose;
+import frc.reuse.commands.drive.DriveOff;
+import frc.reuse.commands.drive.DrivePath;
+import frc.reuse.config.PathContainer;
 
 import edu.wpi.first.wpilibj.command.CommandGroup;
 

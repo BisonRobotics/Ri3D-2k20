@@ -1,13 +1,13 @@
-package org.wfrobotics.reuse.config;
+package frc.reuse.config;
 
-import org.wfrobotics.reuse.commands.drive.DriveCheesy;
-import org.wfrobotics.reuse.config.TalonConfig.ClosedLoopConfig;
-import org.wfrobotics.reuse.hardware.sensors.Gyro;
-import org.wfrobotics.reuse.hardware.sensors.GyroNavx;
-import org.wfrobotics.reuse.subsystems.drive.Lookahead;
-import org.wfrobotics.reuse.subsystems.drive.PathFollower;
-import org.wfrobotics.reuse.subsystems.drive.PathFollower.Parameters;
-import org.wfrobotics.reuse.subsystems.drive.TankMaths;
+import frc.reuse.commands.drive.DriveCheesy;
+import frc.reuse.config.TalonConfig.ClosedLoopConfig;
+import frc.reuse.hardware.sensors.Gyro;
+import frc.reuse.hardware.sensors.GyroNavx;
+import frc.reuse.subsystems.drive.Lookahead;
+import frc.reuse.subsystems.drive.PathFollower;
+import frc.reuse.subsystems.drive.PathFollower.Parameters;
+import frc.reuse.subsystems.drive.TankMaths;
 
 import edu.wpi.first.wpilibj.command.Command;
 

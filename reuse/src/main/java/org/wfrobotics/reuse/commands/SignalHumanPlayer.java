@@ -1,6 +1,6 @@
-package org.wfrobotics.reuse.commands;
+package frc.reuse.commands;
 
-import org.wfrobotics.reuse.EnhancedRobot;
+import frc.reuse.EnhancedRobot;
 
 import edu.wpi.first.wpilibj.command.Command;
 
