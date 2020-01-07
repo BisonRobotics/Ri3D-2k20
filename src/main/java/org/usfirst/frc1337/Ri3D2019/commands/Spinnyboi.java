@@ -25,10 +25,10 @@ public class Spinnyboi extends Command {
     @Override
     protected void execute() {
         if(position == "raise"){
-            Robot.spinner.raise(.4);
+            Robot.spinner.raise(1);
         }
         else{
-            Robot.spinner.lower(.4);
+            Robot.spinner.lower(1);
         }
     }
 

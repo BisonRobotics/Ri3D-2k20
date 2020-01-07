@@ -19,11 +19,11 @@ public class SetPrecentIntake extends Command
     }
 
     public void execute() {
-
+        Robot.intake.setIntakeSpeed(speed);
     }
 
     public boolean isFinished() {
-        Robot.intake.setIntakeSpeed(0);
+        // Robot.intake.setIntakeSpeed(0);
         return false;
     }
 

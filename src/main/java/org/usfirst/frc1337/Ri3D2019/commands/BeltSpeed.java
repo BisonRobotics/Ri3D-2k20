@@ -21,11 +21,11 @@ public class BeltSpeed extends Command
     }
 
     public void execute() {
-
+        Robot.shooter.setBeltSpeed(speed);
     }
 
     public boolean isFinished() {
-        Robot.shooter.setBeltSpeed(0);
+        // Robot.shooter.setBeltSpeed(0);
         return false;
     }
 

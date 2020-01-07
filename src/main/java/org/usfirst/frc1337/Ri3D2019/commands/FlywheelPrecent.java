@@ -19,11 +19,11 @@ public class FlywheelPrecent extends Command
     }
 
     public void execute() {
-
+        Robot.shooter.setFlyWheelSpeed(speed);
     }
 
     public boolean isFinished() {
-        Robot.shooter.setFlyWheelSpeed(0);
+        // Robot.shooter.setFlyWheelSpeed(0);
         return false;
     }
 

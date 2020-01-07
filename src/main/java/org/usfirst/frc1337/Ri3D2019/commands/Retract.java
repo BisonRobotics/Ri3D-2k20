@@ -15,15 +15,15 @@ public class Retract extends Command
     }
     protected void init()
     {
-        Robot.climb.setPrecentSpeedUp(speed);;    
+        Robot.climb.setPrecentSpeedUp(speed);    
     }
 
     public void execute() {
-
+        Robot.climb.setPrecentSpeedUp(speed);
     }
 
     public boolean isFinished() {
-        Robot.climb.setPrecentSpeedUp(0);;    
+        // Robot.climb.setPrecentSpeedUp(0);;    
         return false;
     }
 

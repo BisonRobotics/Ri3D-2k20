@@ -5,8 +5,10 @@ import org.usfirst.frc1337.Ri3D2019.Robot;
 import org.usfirst.frc1337.Ri3D2019.commands.Driving;
 
 import com.revrobotics.CANSparkMax;
+import com.revrobotics.CANSparkMax.IdleMode;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
+import edu.wpi.first.wpilibj.Counter.Mode;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
 
@@ -35,6 +37,11 @@ public class Drivetrain extends Subsystem {
     right1.restoreFactoryDefaults();
     right2.restoreFactoryDefaults();
 
+    left1.setIdleMode(IdleMode.kCoast);
+    left2.setIdleMode(IdleMode.kCoast);
+    right1.setIdleMode(IdleMode.kCoast);
+    right2.setIdleMode(IdleMode.kCoast);
+
     // Set master-slave bindings
     left2.follow(left1);
     right2.follow(right1);
@@ -51,8 +58,8 @@ public class Drivetrain extends Subsystem {
     }
 
     public void driveeeee(){
-        robotDrive.arcadeDrive(Robot.oi.driver.getRawAxis(1) * -1, Robot.oi.driver.getRawAxis(4), true);
-        //differentialDrive.tankDrive(Robot.oi.driver.getRawAxis(1), Robot.oi.driver.getRawAxis(5), false);
+        //robotDrive.arcadeDrive(Robot.oi.driver.getRawAxis(1) * -1, Robot.oi.driver.getRawAxis(4), true);
+        robotDrive.tankDrive(Robot.oi.driver.getRawAxis(1)* -1, Robot.oi.driver.getRawAxis(5)* -1, true);
         //System.out.println(Robot.oi.driver.getY());
         //\System.out.println(Robot.oi.driver.getX());
     }

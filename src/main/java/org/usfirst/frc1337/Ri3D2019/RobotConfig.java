@@ -48,7 +48,7 @@ public class RobotConfig
     public class IntakeConfig
     {
         public int intake = 24;
-        public int loader = 5; // this is a spark
+        public int loader = 15; // this is a spark
         public int deploy = 20;
     }
 

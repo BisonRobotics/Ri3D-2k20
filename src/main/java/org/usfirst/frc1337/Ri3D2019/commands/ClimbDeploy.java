@@ -19,11 +19,11 @@ public class ClimbDeploy extends Command
     }
 
     public void execute() {
-
+        Robot.climb.setPrecentDeploy(speed);
     }
 
     public boolean isFinished() {
-        Robot.climb.setPrecentDeploy(0);    
+        // Robot.climb.setPrecentDeploy(0);    
         return false;
     }
 

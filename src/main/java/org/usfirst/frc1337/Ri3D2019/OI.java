@@ -3,6 +3,8 @@ package org.usfirst.frc1337.Ri3D2019;
 import org.usfirst.frc1337.Ri3D2019.commands.*;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.*;
+// import edu.wpi.first.wpilibj.Jo
+import edu.wpi.first.wpilibj.command.Command;
 
 
 /**
@@ -48,29 +50,63 @@ public class OI {
     public JoystickButton rearDeClimbBtn;
     public JoystickButton hatchIntakeBtn;
     public JoystickButton hatchOuttakeBtn;
+    public JoystickButton sendThatFucker;
+    public JoystickButton winchButton;
     public Joystick driver;
+    public Joystick driver2;
+    public JoystickButton wristBtn;
 
     public OI() {
 
         driver = new Joystick(0);
+        driver2 = new Joystick(1);
         
 
-        outakeBallBtn = new JoystickButton(driver, 6);
-        outakeBallBtn.whileHeld(new BeltSpeed(0.1));
+        outakeBallBtn = new JoystickButton(driver2, 6); // right bump
+        outakeBallBtn.whileHeld(new BeltSpeed(.15));
+        intakeBallBtn = new JoystickButton(driver2, 5); // left bumbp
+        intakeBallBtn.whileHeld(new BeltSpeed(-.20));
+
+        sendThatFucker = new JoystickButton(driver2, 1);
+        sendThatFucker.whileHeld(new FlywheelPrecent(.77));
+
+        sendThatFucker = new JoystickButton(driver2, 4);
+        sendThatFucker.whileHeld(new FlywheelPrecent(.85));
+
         elevatorBtn3 = new JoystickButton(driver, 4);
         elevatorBtn3.whileHeld(new Spinnyboi("raise"));
         elevatorBtn2 = new JoystickButton(driver, 1);
         elevatorBtn2.whileHeld(new Spinnyboi("lower"));
-        intakeBallBtn = new JoystickButton(driver, 5);
-        intakeBallBtn.whileHeld(new FlywheelPrecent(0.6));
+
         elevatorBtn1 = new JoystickButton(driver, 1);
         elevatorBtn1.whileHeld(new SetPercentDeploy(0.1));
-        frontClimbBtn = new JoystickButton(driver, 3);
-        frontClimbBtn.whileHeld(new SetPrecentIntake(0.1));
-        frontDeClimbBtn = new JoystickButton(driver, 9);
-        frontDeClimbBtn.whileHeld(new ClimbDeploy(0.2));
-        rearClimbBtn = new JoystickButton(driver, 2);
-        rearClimbBtn.whileHeld(new Retract(0.2));
+  
+        frontClimbBtn = new JoystickButton(driver2, 3); //x
+        frontClimbBtn.whileHeld(new SetPrecentIntake(0.3));
+        frontClimbBtn = new JoystickButton(driver2, 2); //b
+        frontClimbBtn.whileHeld(new SetPrecentIntake(-0.55));
+
+        frontDeClimbBtn = new JoystickButton(driver, 5); // left bump
+        //frontDeClimbBtn.whileHeld(new ClimbDeploy(0.2));
+        frontDeClimbBtn.whileHeld(new ClimbDeploy(0.9));
+
+        rearClimbBtn = new JoystickButton(driver, 6); // right bump
+        //rearClimbBtn.whileHeld(new ClimbDeploy(-0.4));
+        rearClimbBtn.whileHeld(new ClimbDeploy(0.8));
+
+        winchButton = new JoystickButton(driver, 8); //start
+        winchButton.whileHeld(new Retract(.5));
+
+        winchButton = new JoystickButton(driver, 7); //back
+        winchButton.whileHeld(new Retract(-.1));
+
+        wristBtn = new JoystickButton(driver2, 1); //down
+        wristBtn.whileHeld(new SetPercentWrist(.2));
+
+        wristBtn = new JoystickButton(driver2, 4); //up
+        wristBtn.whileHeld(new SetPercentWrist(-.2));
+
+
         // rearDeClimbBtn = new JoystickButton(driver, 10);
         // rearDeClimbBtn.whileHeld(new climb(1, -1));
         // hatchIntakeBtn = new JoystickButton(driver, 7);
