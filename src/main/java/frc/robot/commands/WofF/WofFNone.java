@@ -1,6 +1,6 @@
-package org.wfrobotics.robot.commands.WofF;
+package frc.robot.commands.WofF;
 
-import org.wfrobotics.robot.subsystems.WofFSubsystem;
+import frc.robot.subsystems.WofFSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 

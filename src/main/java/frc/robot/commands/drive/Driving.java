@@ -1,6 +1,6 @@
-package org.wfrobotics.robot.commands.drive;
+package frc.robot.commands.drive;
 
-import org.wfrobotics.robot.subsystems.DrivetrainSubsystem;
+import frc.robot.subsystems.DrivetrainSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 

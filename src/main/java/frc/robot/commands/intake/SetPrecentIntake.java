@@ -1,6 +1,6 @@
-package org.wfrobotics.robot.commands.intake;
+package frc.robot.commands.intake;
 
-import org.wfrobotics.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.IntakeSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 

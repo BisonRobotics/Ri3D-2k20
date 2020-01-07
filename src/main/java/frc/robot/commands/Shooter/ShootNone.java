@@ -1,6 +1,6 @@
-package org.wfrobotics.robot.commands.Shooter;
+package frc.robot.commands.Shooter;
 
-import org.wfrobotics.robot.subsystems.ShooterSubsystem;
+import frc.robot.subsystems.ShooterSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 
