@@ -16,6 +16,7 @@ public class SetPrecentIntake extends Command
     public void init()
     {
         Robot.intake.setIntakeSpeed(speed);
+        Robot.intake.setIndexSpeed(speed);
     }
 
     public void execute() {

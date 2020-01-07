@@ -1,13 +1,11 @@
 package org.usfirst.frc1337.Ri3D2019.subsystems;
 
-import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.revrobotics.CANSparkMax;
 import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 
 import org.usfirst.frc1337.Ri3D2019.RobotConfig;
 
 import edu.wpi.first.wpilibj.command.Subsystem;
-import edu.wpi.first.wpilibj2.command.Command;
 
 public final class ClimbSubsystem extends Subsystem {
     static class SingletonHolder {

@@ -10,11 +10,14 @@ public class Intake extends Subsystem {
 
     private WPI_TalonSRX wrist;
     private WPI_TalonSRX wheels;
+    private WPI_TalonSRX index;
 
     public Intake() {
         final RobotConfig config = RobotConfig.getInstance();
         wheels =   new WPI_TalonSRX(config.intakeConfig.intake);
         wrist = new WPI_TalonSRX(config.intakeConfig.loader);
+        index = new WPI_TalonSRX(config.intakeConfig.loader);
+
     }
 
     @Override
@@ -25,6 +28,10 @@ public class Intake extends Subsystem {
     public void setIntakeSpeed(double precentSpeed)
     {
         wheels.set(ControlMode.PercentOutput, precentSpeed);
+    }
+    public void setIndexSpeed(double precentSpeed)
+    {
+        index.set(ControlMode.PercentOutput, precentSpeed);
     }
     public void setWristSpeed(double precentSpeed)
     {

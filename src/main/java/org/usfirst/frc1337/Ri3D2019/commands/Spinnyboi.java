@@ -7,7 +7,6 @@ import org.usfirst.frc1337.Ri3D2019.Robot;
 public class Spinnyboi extends Command {
 
     private String position;
-    private boolean testingMode = false;
 
     // Overloaded constructor to allow for picking position
     public Spinnyboi(String position) {
