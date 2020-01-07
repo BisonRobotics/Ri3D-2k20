@@ -1,6 +1,6 @@
-package org.wfrobotics.robot.commands.climb;
+package frc.robot.commands.climb;
 
-import org.wfrobotics.robot.subsystems.ClimbSubsystem;
+import frc.robot.subsystems.ClimbSubsystem;
 
 import edu.wpi.first.wpilibj.command.Command;
 
