@@ -17,20 +17,20 @@ public class RobotConfig
     }
     public class DriveConfig
     {
-        public int rightMaster =  12;
-        public int rightSlave = 17;
-        public int leftMaster = 13;
-        public int leftSlave = 14;
+        public int rightMaster = 13;
+        public int rightSlave = 14;
+        public int leftMaster = 17;
+        public int leftSlave = 12;
         public double maxSpeed = 1.0; //exactly what it sounds like
         // Set this to true if bot only spins when you try to go forward or back
         public boolean rightSideInverted = false;
         // You'll need to increase this if the drive is twitchy at idle, but .06 should be fine
-        public double deadband = 0.06;
+        public double deadband = 0; //.06
     }
     public class ShooterConfig
     {
         public int belt = 22;
-        public int flywheel = 7;
+        public int flywheel = 25;
 
     }
     public class ClimbConfig
@@ -47,9 +47,9 @@ public class RobotConfig
     }
     public class IntakeConfig
     {
-        public int intake = 8;
-        public int loader = 24;
-        public int deploy = 69;
+        public int intake = 24;
+        public int loader = 14;
+        public int deploy = 20;
     }
 
     private static RobotConfig instance = null;

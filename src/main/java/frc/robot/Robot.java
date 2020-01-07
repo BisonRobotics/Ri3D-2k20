@@ -30,6 +30,7 @@ public final class Robot extends PrototypeEnhancedRobot
         subsystems.register(DrivetrainSubsystem.getInstance());
         subsystems.register(LEDSubsystem.getInstance());
 
+        IO.getInstance().setRumble(true);
     }
 
     @Override

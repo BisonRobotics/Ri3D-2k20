@@ -2,6 +2,7 @@ package frc.robot.config;
 
 import frc.reuse.config.ButtonFactory;
 import frc.reuse.config.ButtonFactory.TRIGGER;
+import frc.robot.commands.LEDsChange;
 import frc.robot.commands.Shooter.BeltSpeed;
 import frc.robot.commands.Shooter.FlywheelPrecent;
 import frc.robot.commands.WofF.PrecentSpinner;
@@ -17,12 +18,12 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
 public final class IO implements EnhancedIO
 {
     private static IO instance = null;
-    private final Xbox operator;
+    public final Xbox operator;
 
     /** Create and configure controls for Drive Team */
     private IO()
     {
-        operator = new Xbox(3);
+        operator = new Xbox(0);
     }
 
     /** Configure each Button to run a Command */
@@ -34,6 +35,8 @@ public final class IO implements EnhancedIO
         ButtonFactory.makeButton(operator, Xbox.BUTTON.B, TRIGGER.WHILE_HELD, new SetPrecentIntake(0.1));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.A, TRIGGER.WHILE_HELD, new PrecentSpinner(0.1));
         ButtonFactory.makeButton(operator, Xbox.BUTTON.X, TRIGGER.WHILE_HELD, new DeployPercent(0.1));
+        ButtonFactory.makeButton(operator, Xbox.BUTTON.START, TRIGGER.WHILE_HELD, new LEDsChange());
+
     }
 
     public double getTurn()

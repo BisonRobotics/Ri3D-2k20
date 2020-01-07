@@ -8,7 +8,6 @@ import com.revrobotics.CANSparkMaxLowLevel.MotorType;
 import frc.reuse.subsystems.EnhancedSubsystem;
 import frc.robot.commands.drive.*;
 import frc.robot.config.RobotConfig;
-
 import frc.robot.config.IO;
 
 public class DrivetrainSubsystem extends EnhancedSubsystem {
@@ -61,7 +60,7 @@ public class DrivetrainSubsystem extends EnhancedSubsystem {
 
   // Main robot driving control
   public void driveeeee() {
-    robotDrive.arcadeDrive(OIConfig.getThrottle(), OIConfig.getTurn(), true); // true for squared inputs
+    robotDrive.arcadeDrive(OIConfig.operator.getAxis(frc.reuse.config.Xbox.AXIS.LEFT_X), OIConfig.operator.getAxis(frc.reuse.config.Xbox.AXIS.LEFT_Y), true); // true for squared inputs
   }
   
   public void cacheSensors(boolean isDisabled) {
@@ -69,6 +68,11 @@ public class DrivetrainSubsystem extends EnhancedSubsystem {
   }
 
   public void reportState() {
+  }
+
+  protected void initDefaultCommand()
+  {
+      setDefaultCommand(new Driving());
   }
 
   public TestReport runFunctionalTest() {

@@ -25,6 +25,16 @@ public final class LEDSubsystem extends EnhancedSubsystem
     public void changeColor()
     {
         Leds.set(BlinkinDict.Color.GOLD.value);
+	}
+	
+	public void changeColor1()
+    {
+        Leds.set(BlinkinDict.Color.AQUA.value);
+	}
+	
+	public void changeColor2()
+    {
+        Leds.set(BlinkinDict.Color.RED.value);
     }
 
     protected void initDefaultCommand()
