@@ -21,10 +21,6 @@ public final class BeltSubsystem extends Subsystem
     {
         belt.set(ControlMode.PercentOutput, precentSpeed);
     }
-    public void setFlyWheelSpeed(double precentSpeed)
-    {
-        flywheel.set(ControlMode.PercentOutput, precentSpeed);
-    }
     
     public void cacheSensors(boolean isDisabled)
     {

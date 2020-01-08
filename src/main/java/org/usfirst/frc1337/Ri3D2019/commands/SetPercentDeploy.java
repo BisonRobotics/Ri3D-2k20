@@ -15,15 +15,15 @@ public class SetPercentDeploy extends Command
     }
     public void init()
     {
-        Robot.intake.setWristSpeed(speed);
     }
 
     public void execute() {
+        Robot.intake.setWristSpeed(speed);
 
     }
 
+
     public boolean isFinished() {
-        Robot.intake.setWristSpeed(0);;
         return false;
     }
 

@@ -87,12 +87,9 @@ public class OI {
         frontClimbBtn.whileHeld(new SetPrecentIntake(-0.55));
 
         frontDeClimbBtn = new JoystickButton(driver, 5); // left bump
-        //frontDeClimbBtn.whileHeld(new ClimbDeploy(0.2));
-        frontDeClimbBtn.whileHeld(new ClimbDeploy(0.9));
-
+        frontDeClimbBtn.whileHeld(new ClimbDeploy(0.4));
         rearClimbBtn = new JoystickButton(driver, 6); // right bump
-        //rearClimbBtn.whileHeld(new ClimbDeploy(-0.4));
-        rearClimbBtn.whileHeld(new ClimbDeploy(0.8));
+        rearClimbBtn.whileHeld(new ClimbDeploy(-0.4));
 
         winchButton = new JoystickButton(driver, 8); //start
         winchButton.whileHeld(new Retract(.5));
@@ -100,12 +97,11 @@ public class OI {
         winchButton = new JoystickButton(driver, 7); //back
         winchButton.whileHeld(new Retract(-.1));
 
-        wristBtn = new JoystickButton(driver2, 1); //down
-        wristBtn.whileHeld(new SetPercentWrist(.2));
-
-        wristBtn = new JoystickButton(driver2, 4); //up
-        wristBtn.whileHeld(new SetPercentWrist(-.2));
-
+        wristBtn = new JoystickButton(driver, 3); //down
+        wristBtn.whileHeld(new SetPercentDeploy(0.420));
+        
+        wristBtn = new JoystickButton(driver, 2); //up
+        wristBtn.whileHeld(new SetPercentDeploy(-0.69));
 
         // rearDeClimbBtn = new JoystickButton(driver, 10);
         // rearDeClimbBtn.whileHeld(new climb(1, -1));

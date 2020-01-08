@@ -10,7 +10,7 @@ public class BeltSpeed extends Command
     double speed;
     public BeltSpeed(double precentSpeed)
     {
-        requires(Robot.shooter);
+        requires(Robot.belt);
         this.speed = precentSpeed;
     }
     protected void init()

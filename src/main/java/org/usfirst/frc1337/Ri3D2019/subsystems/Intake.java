@@ -20,7 +20,7 @@ public class Intake extends Subsystem {
     public Intake() {
         final RobotConfig config = RobotConfig.getInstance();
         wheels =   new WPI_TalonSRX(config.intakeConfig.intake);
-        wrist = new WPI_TalonSRX(config.intakeConfig.loader);
+        wrist = new WPI_TalonSRX(config.intakeConfig.deploy);
         indexer = new CANSparkMax(config.intakeConfig.loader, MotorType.kBrushed);
         
         indexer.restoreFactoryDefaults();
@@ -38,7 +38,7 @@ public class Intake extends Subsystem {
     }
     public void setIndexSpeed(double precentSpeed)
     {
-        index.set(ControlMode.PercentOutput, precentSpeed);
+        indexer.set(precentSpeed);
     }
     public void setWristSpeed(double precentSpeed)
     {

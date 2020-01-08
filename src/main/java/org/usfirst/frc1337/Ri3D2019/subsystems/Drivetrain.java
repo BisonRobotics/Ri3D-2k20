@@ -58,8 +58,8 @@ public class Drivetrain extends Subsystem {
     }
 
     public void driveeeee(){
-        //robotDrive.arcadeDrive(Robot.oi.driver.getRawAxis(1) * -1, Robot.oi.driver.getRawAxis(4), true);
-        robotDrive.tankDrive(Robot.oi.driver.getRawAxis(1)* -1, Robot.oi.driver.getRawAxis(5)* -1, true);
+        robotDrive.arcadeDrive(Robot.oi.driver.getRawAxis(1) * -1, Robot.oi.driver.getRawAxis(4), true);
+        // robotDrive.tankDrive(Robot.oi.driver.getRawAxis(1)* -1, Robot.oi.driver.getRawAxis(5)* -1, true);
         //System.out.println(Robot.oi.driver.getY());
         //\System.out.println(Robot.oi.driver.getX());
     }
