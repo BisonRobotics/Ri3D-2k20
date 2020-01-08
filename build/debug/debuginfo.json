@@ -1,9 +1,9 @@
 [
   {
-    "artifact": "frcJava (in project 4818)",
+    "artifact": "frcJava (in project Ri3D-2k20)",
     "target": "roborio",
     "debugfile": "frcJava_roborio.debugconfig",
-    "project": "4818",
+    "project": "Ri3D-2k20",
     "language": "java"
   }
 ]
